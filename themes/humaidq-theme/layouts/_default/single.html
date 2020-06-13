@@ -1,0 +1,5 @@
+{{ partial "header.html" . }}
+{{ if .Params.BackNav }}<p><a href="{{ .Parent.Permalink }}">&lt; Go back</a></p>{{ end }}
+<h2>{{ .Title }}</h2>
+{{.Content}}
+{{ partial "footer.html" . }}

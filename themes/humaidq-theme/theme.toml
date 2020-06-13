@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Humaidq Theme"
+license = "MIT"
+licenselink = "https://humaidq.ae"
+description = ""
+homepage = "https://humaidq.ae"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Humaid"
+  homepage = "https://humaidq.ae"

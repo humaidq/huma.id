@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+<p><a href="{{ .Parent.Permalink }}">&lt; Go back</a></p>
+<h2>{{ .Title }}</h2>
+<p>{{ dateFormat "Jan 2, 2006" .Params.date }} &middot; {{.ReadingTime}} min read</p>
+<div class="blog">
+    {{.Content}}
+<hr>
+<p>Would like to comment on the blog post? Feel free to
+<a href="mailto:~humaid/general@lists.sr.ht?Subject=Re: {{.Title}}">start a discussion</a> on my
+<a href="https://lists.sr.ht/~humaid/general" target="_blank">public general mailing list</a>.</p>
+</div>
+
+{{ partial "webring-out.html"}}
+{{ partial "footer.html" . }}

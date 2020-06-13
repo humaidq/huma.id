@@ -1,0 +1,8 @@
+public/
+*.log
+*.iso*
+*.bz2
+content/gallery/*/
+layouts/partials/webring-out.html
+layouts/partials/webring-out.html
+Makefile

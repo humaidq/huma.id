@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+<meta http-equiv="Cache-control" content="public">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{{ range .AlternativeOutputFormats -}}
+			{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+		{{ end -}}
+		{{if .Site.IsServer}}<link rel="stylesheet" href="{{ "/css/main.css" | relURL }}" />{{else}}<link rel="stylesheet" href="{{ "/css/main.min.css" | relURL }}?v=4" />{{end}}
+		{{if eq .Type "blog"}}<link rel="stylesheet" href="{{ "/css/webring.min.css" | relURL }}" />{{end}}
+		<title>{{if .Title}}{{ .Title }} - {{end}}Humaid AlQassimi</title>
+		{{if .Description}}<meta name="description" content="{{.Description}}" />{{else if .Summary}}
+		<meta name="description" content="{{.Summary}}" />{{end}}
+		<meta property="og:site_name" content="Humaid AlQassimi's site" />
+		<meta property="og:image" content="{{.Site.BaseURL}}img/me-2020.jpg" />
+		<link rel="icon" type="image/jpeg" href="/favicon.png?v=2" />
+	</head>
+	<body>
+		<header>
+			<h1 class="title">Humaid AlQassimi</h1>
+		</header>
+		<nav class="nav">
+			{{ $currentPage := . }}{{ range .Site.Menus.main }}{{ if not (eq .Name "") }}<a href="{{.URL | absLangURL }}" class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">{{.Name}}</a>
+			{{ end }}{{ end }}
+		</nav>
+		<main>
+			<div class="content">

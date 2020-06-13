@@ -1,0 +1,3 @@
+# robots.txt for https://humaidq.ae
+Sitemap: https://humaidq.ae/sitemap.xml
+

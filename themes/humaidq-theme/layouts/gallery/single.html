@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+<h1>{{ .Title }}</h1>
+<p><a href="{{ .Parent.Permalink }}">&lt; Go back</a></p>
+<div class="meta">
+<p>Date: {{ dateFormat "Monday, 2 January 2006" .Params.date }}</p>
+  <p>Licensed under: {{ .Params.License }}</p>
+  <p>Location: {{ range .Params.location }}<a href="{{ "/location/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}</p>
+  <p>Coordinates: <a href="https://mapper.acme.com/?ll={{.Params.lat}},{{.Params.lon}}&z=19&t=M&marker0={{.Params.lat}},{{.Params.lon}},{{.Title}}">{{.Params.lat}},{{.Params.lon}}</a></p>
+</div>
+{{.Content}}
+{{- $path := print "content/gallery/" $.File.TranslationBaseName -}}
+{{- $files := readDir $path -}}
+
+<div class="gal">
+	{{- range $files }}{{if not (eq .Name "thumbs")}}<a href="{{ .Name }}"><img src="thumbs/{{ .Name }}" alt="An image of {{$.Title}}" /></a>
+{{end}}{{- end }}
+</div>
+
+
+
+{{ partial "footer.html" . }}

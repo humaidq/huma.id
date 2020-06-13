@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+{{if not .IsHome }}
+{{ range .Pages.GroupByParam "Section" }}
+<h3>{{.Key}}</h3>
+{{ range .Pages }}<div class="entry"><b><a href="{{ .URL }}">{{ .Title }}</a></b>
+{{ if .Params.LatestVersion }}<small>({{.Params.LatestVersion}})</small>{{end}}{{if .Params.Language}} {{.Params.Language}}{{end}}
+<div class="meta">
+{{if .Params.Description}}<p>{{.Params.Description}}</p>{{end}}
+</div></div>{{ end }}{{ end }}{{ end }}
+{{ partial "footer.html" . }}

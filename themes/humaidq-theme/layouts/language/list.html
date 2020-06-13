@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+{{if not .Params.top}}<p><a href="/language">&lt; View languages</a></p>{{end}}
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+{{if not .Params.top}}<p>{{ if .Params.LanguageURL }}Learn more about this language <a href="{{ .Params.LanguageURL }}">on Wikipedia</a>. {{ end }}Below is a list of projects which use this programming language.</p>{{ end }}
+{{if not .IsHome }}<ul>
+  {{ range .Data.Pages }}<li><a href="{{ .URL }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>{{ end }}
+{{ partial "footer.html" . }}

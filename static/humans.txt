@@ -1,0 +1,3 @@
+/* SITE */
+Generator: Hugo <https://gohugo.io>
+Software: neovim, rsync, apache, gnu make, tdewolff's minify, git
