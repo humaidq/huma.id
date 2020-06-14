@@ -1,6 +1,6 @@
 ---
 title: "Setting up a Yubikey on Void Linux"
-date: 2020-06-13
+date: 2020-06-16
 draft: true
 ---
 
