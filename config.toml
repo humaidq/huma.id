@@ -9,7 +9,7 @@ enableGitInfo = true
 disableHugoGeneratorInject = true
 #canonifyURLs = true
 [Params]
-	images = ["img/me.jpg"]
+	images = ["img/me-2020.jpg"]
 	ISO8601 = "2006-01-02T15:04:05GMT"
   	profilePicEnabled = true
 
