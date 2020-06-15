@@ -30,7 +30,7 @@ was running (since I had a formatted USB laying around), and it appears that
 the entire system runs on half of gigabyte of flash storage.
 
 Next I downloaded FreeNAS 11.3 and formatted it to a USB stick, I plugged in
-the installation USB and a second USB which I'll use for the installation. The
+the installation USB and a second USB which I'll install FreeNAS onto. The
 installation went smoothly and it booted to the FreeNAS selection menu.
 
 After plugging in the Ethernet, I visited the NAS IP address, lo and behold, we
