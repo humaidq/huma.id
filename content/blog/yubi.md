@@ -1,13 +1,12 @@
 ---
 title: "Setting up a Yubikey on Void Linux"
 date: 2020-06-16
-draft: true
 ---
 
 I recently got a [Yubikey], which is a hardware authentication device. It has
 multiple functions, the Yubikey 4 has two slots which you can configure.
 Getting the device to work on Void Linux wasn't obvious, this is a simple guide
-on how to get a Yubikey working on [Void Linux].
+and a future reference on how to get a Yubikey working on [Void Linux].
 
 ### Setting up your system
 
@@ -32,6 +31,9 @@ Now you need to install Yubikey packages:
 
 After restarting your system, you can then plug in your key, and run
 the `ykpers-gui` utility (or `ykpers` if you prefer a command-line interface).
+
+<img src="ykpers-gui.png" href="A screenshot of the ykpers-gui utility on the
+About page" width="480" />
 
 ### Further configuration
 
