@@ -1,0 +1,18 @@
+sfeedpath="./feeds"
+
+feeds() {
+	feed "Drew DeVault's blog" "https://drewdevault.com/feed.xml"
+	feed "research!rsc" "https://research.swtch.com/feed.atom"
+	feed "paritybit.ca (Jake Bauer)" "https://www.paritybit.ca/feeds/sitewide-feed.xml"
+	feed "arp242 (Martin Tournoij)" "https://www.arp242.net/feed.xml"
+	feed "Akilan Selvacoumar's blog" "https://akilan.io/posts/index.xml"
+	feed "Omar Ali's blog" "https://omarali.me/?feed=rss2"
+	feed "Kev Quirk's blog" "https://kevq.uk/"
+	feed "Derek Sivers" "https://sivers.org/en.atom"
+	feed "joshua stein" "https://jcs.org/rss"
+	feed "The Go Programming Language Blog" "https://blog.golang.org/feed.atom"
+	feed "Christine Dodrill's blog" "https://christine.website/blog.rss"
+	feed "Caleb Doxsey's blog" "https://www.doxsey.net/blog/feed/index.xml"
+	feed "SourceHut blog" "https://sourcehut.org/blog/index.xml"
+	feed "tonsky.me (Nikita)" "http://tonsky.me/blog/atom.xml"
+}
