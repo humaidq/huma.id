@@ -9,6 +9,7 @@
     {{if .Site.IsServer}}<link rel="stylesheet" href="{{ "/css/main.css" | relURL }}" />{{else}}<link rel="stylesheet" href="{{ "/css/main.min.css" | relURL }}" />{{end}}
     {{if eq .Type "blog"}}<link rel="stylesheet" href="{{ "/css/webring.min.css" | relURL }}" />{{end}}
     <title>{{if .Title}}{{ .Title }} - {{end}}Humaid AlQassimi</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
