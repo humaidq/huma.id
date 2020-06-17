@@ -66,6 +66,11 @@ a {
   margin: 5px;
 }
 
+
+a:focus {
+  outline: 2.5pt solid #ffbf47;
+}
+
 /* Images and Gallery */
 img {
   max-width: 100%;
@@ -188,4 +193,10 @@ aside ul {
     border: 2px solid #000;
     background-color: #222;
   }
+}
+
+.nav-item:focus {
+  outline: 0;
+  background: #ffbf47;
+  color: #000000;
 }
