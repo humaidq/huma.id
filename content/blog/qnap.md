@@ -3,7 +3,7 @@ title: "Installing FreeNAS on my QNAP TS-459"
 date: 2020-06-15
 ---
 
-<img src="qnap.jpg" href="A picture of the QNAP on a wooden desk" width="480" />
+<img src="qnap.jpg" alt="A picture of the QNAP on a wooden desk" width="480" />
 
 About four years ago I got the QNAP TS-459 as a network-attached storage (NAS)
 so I can store family pictures and backups of our devices. It came with QNAP
