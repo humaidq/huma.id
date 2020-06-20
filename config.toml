@@ -2,6 +2,7 @@ baseURL = "https://humaidq.ae/"
 languageCode = "en-us"
 title = "Humaid AlQassimi's Website"
 theme = "humaidq-theme"
+copyright = "The content of this site is CC BY-SA 4.0. The code of this site is BSD 2-Clause."
 preserveTaxonomyNames = true
 pygmentsUseClasses = true
 pygmentsCodeFences = true
@@ -9,6 +10,7 @@ enableGitInfo = true
 disableHugoGeneratorInject = true
 #canonifyURLs = true
 [Params]
+	name = "Humaid AlQassimi"
 	images = ["img/me-2020.jpg"]
 	ISO8601 = "2006-01-02T15:04:05GMT"
   	profilePicEnabled = true
