@@ -14,5 +14,5 @@ feeds() {
 	feed "Christine Dodrill's blog" "https://christine.website/blog.rss"
 	feed "Caleb Doxsey's blog" "https://www.doxsey.net/blog/feed/index.xml"
 	feed "SourceHut blog" "https://sourcehut.org/blog/index.xml"
-	feed "tonsky.me (Nikita)" "http://tonsky.me/blog/atom.xml"
+	feed "tonsky.me (Nikita)" "https://tonsky.me/blog/atom.xml"
 }
