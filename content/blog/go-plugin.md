@@ -336,4 +336,8 @@ implementation](https://github.com/mattermost/mattermost-server/tree/master/plug
 or [go-plugin's example
 implementations](https://github.com/hashicorp/go-plugin/tree/master/examples).
 
+
+*This is my fifth post in the [#100DaysToOffload](https://100daystooffload.com)
+challenge.*
+
 [handshake config]: https://godoc.org/github.com/hashicorp/go-plugin#HandshakeConfig

@@ -94,6 +94,9 @@ seems to be a resolved. The [Arch Wiki page on the
 T590](https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_T590) was very
 useful.
 
+*This is my fourth post in the [#100DaysToOffload](https://100daystooffload.com)
+challenge.*
+
 [Void Linux]: https://voidlinux.org/
 [spleen]: https://github.com/fcambus/spleen
 [throttled]: https://github.com/erpalma/throttled

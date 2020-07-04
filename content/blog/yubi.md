@@ -40,5 +40,9 @@ About page" width="480" />
 The [Arch Wiki Yubikey article](https://wiki.archlinux.org/index.php/Yubikey)
 has detailed examples on how you could setup your key.
 
+
+*This is my third post in the [#100DaysToOffload](https://100daystooffload.com)
+challenge.*
+
 [Yubikey]: https://en.wikipedia.org/wiki/YubiKey
 [Void Linux]: https://voidlinux.org/
