@@ -90,7 +90,7 @@ button, which is separate from the keyboard).
 | NFC                    | **No** | Not detected by `libnfc`.                                                          |
 
 I faced a CPU throttling issue which can be fixed with [throttled], but this
-seems to be a resolved. The [Arch Wiki page on the
+seems to be resolved. The [Arch Wiki page on the
 T590](https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_T590) was very
 useful.
 
