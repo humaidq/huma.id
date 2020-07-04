@@ -1,5 +1,5 @@
 ---
-title: "Building your own Linux distribution (part 1, Xubuntu)"
+title: "Creating an Ubuntu-based distribution"
 date: 2020-05-01
 ---
 
