@@ -66,6 +66,14 @@ a {
   margin: 5px;
 }
 
+pre {
+  border-radius: 10px;
+}
+
+code {
+  border-radius: 4px;
+  background-color: #272822;
+}
 
 a:focus {
   outline: 2.5pt solid #ffbf47;
