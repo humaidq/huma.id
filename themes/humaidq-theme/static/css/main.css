@@ -72,7 +72,6 @@ pre {
 
 code {
   border-radius: 4px;
-  background-color: #272822;
 }
 
 a:focus {
@@ -200,6 +199,9 @@ aside ul {
   aside {
     border: 2px solid #000;
     background-color: #222;
+  }
+  code {
+    background-color: #272822;
   }
 }
 
