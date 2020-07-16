@@ -1,5 +1,5 @@
 ---
-title: "My Public News Aggregator"
+title: "My Public News Feed"
 date: 2020-07-12
 ---
 
