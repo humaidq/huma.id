@@ -17,4 +17,9 @@ feeds() {
 	feed "tonsky.me (Nikita)" "https://tonsky.me/blog/atom.xml"
 	feed "tedu's flak" "https://flak.tedunangst.com/rss"
 	feed "Posts on secluded.site" "https://secluded.site/posts/index.xml"
+	feed "jlelse's Blog" "https://jlelse.blog/posts/index.xml"
+	feed "Ctrl blog" "https://feed.ctrl.blog/latest.atom"
+	feed "Gokberk Yaltirakli's blog" "https://www.gkbrk.com/feed.xml"
+	feed "Nora's blog" "https://nora.codes/index.xml"
+	feed "Hillel Wayne's blog" "https://www.hillelwayne.com/post/index.xml"
 }

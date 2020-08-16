@@ -1,10 +1,10 @@
 ---
 title: "Detecting the Empty Character in Go"
-date: 2020-07-28
+date: 2020-07-29
 ---
 
-Recently, I have been working on an online ticketing system. I have been using
-`strings.TrimSpace` for a while, and it worked well. I tested
+I have recently been working on an online ticketing system. I have been using
+`strings.TrimSpace` for a while, and it works well. I tested
 it with the "empty character" from
 [emptycharacter.com](https://emptycharacter.com/), and it failed to detect
 whatever whitespace characters it was using.
