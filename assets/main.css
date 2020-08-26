@@ -52,11 +52,11 @@ a {
   margin: 0 0 0 25px;
 }
 
-.content {
+main {
   padding: 20px 30px;
 }
 
-.footer {
+footer {
   padding: 1rem;
   text-align: center;
   color: #2f2f2f;
@@ -66,7 +66,7 @@ a {
   text-decoration: underline;
 }
 
-.footer p {
+footer p {
   margin: 5px;
 }
 
@@ -162,7 +162,7 @@ aside ul {
 }
 
 /* Navigation bar */
-.nav {
+nav {
   overflow: hidden;
   text-align: center;
   padding-bottom: 1rem;
@@ -191,7 +191,7 @@ aside ul {
     background-color: #202125;
     color: #cfcfcf;
   }
-  h1, h2, h3, h4, h5, h6, .footer {
+  h1, h2, h3, h4, h5, h6, footer {
     color: #ccc;
   }
   a, .entry a {

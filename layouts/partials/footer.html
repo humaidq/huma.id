@@ -1,15 +1,7 @@
-			</div>
-		</main>
-		<div class="footer">
-      <p>Copyright &copy; 2013-{{if $.GitInfo}}{{dateFormat "2006" $.GitInfo.AuthorDate}}{{else}}2020{{end}} Humaid AlQassimi</p>
-      <p>The content of this site is CC BY-SA 4.0. The code of this site
-        is BSD 2-Clause.
-         <a target="sitesource" href="https://git.sr.ht/~humaid/humaidq.ae/tree/master/LICENSE">View license file</a></p>
-      {{if $.GitInfo }}
-      <p><a target="sitesource"
-             href="https://git.sr.ht/~humaid/humaidq.ae">{{$.GitInfo.AbbreviatedHash}}</a></p>
-      <!--<small>This page is last modified on
-        {{dateFormat "Jan 2, 2006" $.GitInfo.AuthorDate}}</small>-->{{end}}
-		</div>
-	</body>
-</html>
+</main>
+<footer>
+  <p>Copyright &copy; 2013-{{if $.GitInfo}}{{dateFormat "2006" $.GitInfo.AuthorDate}}{{else}}2020{{end}} Humaid AlQassimi</p>
+  <p>The content of this site is CC BY-SA 4.0. The code of this site
+    is BSD 2-Clause.
+     <a target="sitesource" href="https://git.sr.ht/~humaid/humaidq.ae/tree/master/LICENSE">View license file</a></p>
+</footer>
