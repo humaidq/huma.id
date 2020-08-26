@@ -1,7 +1,6 @@
 baseURL = "https://humaidq.ae/"
 languageCode = "en-us"
 title = "Humaid AlQassimi's Website"
-theme = "humaidq-theme"
 copyright = "The content of this site is CC BY-SA 4.0. The code of this site is BSD 2-Clause."
 preserveTaxonomyNames = true
 pygmentsUseClasses = true
@@ -16,23 +15,6 @@ disableHugoGeneratorInject = true
   	profilePicEnabled = true
 
 sectionPagesMenu = "main"
-
-paginate = 5
-paginatePath = ""
-
-[privacy]
-  [privacy.disqus]
-    disable = true
-  [privacy.googleAnalytics]
-    disable = true
-  [privacy.instagram]
-    disable = true
-  [privacy.twitter]
-    disable = true
-  [privacy.vimeo]
-    disable = true
-  [privacy.youtube]
-    disable = true
 
 [menu]
   [[menu.main]]
@@ -70,13 +52,7 @@ paginatePath = ""
     weight = -100
 
 [taxonomies]
-#    license = "license"
     location = "location"
-#    language = "language"
-
-[blackfriday]
-  hrefTargetBlank = true
-  noreferrerLinks = true
 
 [markup.tableOfContents]
 	startLevel = 3
