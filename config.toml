@@ -78,10 +78,8 @@ paginatePath = ""
   hrefTargetBlank = true
   noreferrerLinks = true
 
-[markup]
-	[markup.tableOfContents]
-		startLevel = 3
-	[markup.goldmark]
-		[markup.goldmark.renderer]
-			unsafe = true
-			xHTML = true
+[markup.tableOfContents]
+	startLevel = 3
+[markup.goldmark.renderer]
+	unsafe = true
+	xHTML = true
