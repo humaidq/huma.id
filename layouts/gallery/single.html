@@ -1,4 +1,5 @@
 {{ partial "header.html" . }}
+<section>
 <h1>{{ .Title }}</h1>
 <p><a href="{{ .Parent.Permalink }}">&lt; Go back</a></p>
 <div class="meta">
@@ -15,7 +16,5 @@
 	{{- range $files }}{{if not (eq .Name "thumbs")}}<a href="{{ .Name }}"><img src="thumbs/{{ .Name }}" alt="An image of {{$.Title}}" /></a>
 {{end}}{{- end }}
 </div>
-
-
-
+</section>
 {{ partial "footer.html" . }}

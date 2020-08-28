@@ -1,6 +1,7 @@
 ---
 title: XMath Privacy Policy
 date: 2017-12-05
+nosidebar: true
 ---
 
 XMath does not collect or transmit any personal information.

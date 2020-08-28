@@ -1,9 +1,0 @@
-{{ if or (.Paginator.HasPrev) (.Paginator.HasNext)}}<hr />{{end}}
-{{ if gt (.Paginator.TotalPages) 0 }}<p class="center-text">Page {{.Paginator.PageNumber}} of {{.Paginator.TotalPages}}</p>{{end}}
-{{ if .Paginator.HasPrev }}
-<a rel="prev" href="{{.Paginator.Prev.URL}}">&lt; Previous</a>
-{{ end }}
-{{ if .Paginator.HasNext }}
-<a rel="next" class="right-text" href="{{.Paginator.Next.URL}}">Next &gt;</a>
-{{ end }}
-{{ if or (.Paginator.HasPrev) (.Paginator.HasNext)}}<br />{{end}}

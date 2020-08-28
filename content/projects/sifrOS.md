@@ -43,7 +43,7 @@ The following packages must be installed on your system.
 
 ### 3. Copying and contributing
 
-This is a fork of [Void Linux live image maker](github.com/void-linux/void-mklive)
+This is a fork of [Void Linux live image maker](https://github.com/void-linux/void-mklive)
 which is written by Juan RP, Dave Elusive and 
 [Void contributors](https://github.com/orgs/void-linux/people) and is distributed 
 under the BSD 2 Clause license.

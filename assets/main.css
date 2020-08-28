@@ -13,6 +13,35 @@ body {
   margin: 0 auto;
 }
 
+section {
+  width: 100%;
+}
+
+.container {
+  margin: 15px;
+}
+
+.index {
+  display: flex;
+  flex-direction: row;
+}
+
+.index aside {
+  width: 40%;
+}
+
+.index aside img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.lang {
+  font-weight: 600;
+  font-size: 12pt;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   color: #333;
@@ -23,25 +52,30 @@ h1, h2, h3, h4, h5, h6 {
 .title {
   font-size: 2.5rem;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 15px 0;
   padding: 0 30px;
 }
 
-a {
- color: #052ba0;
+.c {
+  text-align: center;
 }
 
 .entry {
   display: block;
   width: 100%;
-  padding: 5px 15px;
+  margin-bottom: 1rem;
 }
 
 .entry a {
-  color: #0b47bf;
-  font-weight: bold;
-  text-decoration: none;
+  display: block;
+}
+
+.project a {
+  display: inline;
+}
+
+.index .container {
+  width: 50%;
 }
 
 .meta a {
@@ -60,10 +94,6 @@ footer {
   padding: 1rem;
   text-align: center;
   color: #2f2f2f;
-}
-
-.und {
-  text-decoration: underline;
 }
 
 footer p {
@@ -86,13 +116,6 @@ a:focus {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.me {
-  width: 200px;
-  float:right;
-  border-radius: 20px;
-  margin: 20px;
 }
 
 .gal {
@@ -120,7 +143,7 @@ code {
   font-size: .9em;
 }
 
-aside {
+.toc {
   border: 2px solid #777;
   background-color: #eee;
   padding: .5em 2.5em;
@@ -129,7 +152,7 @@ aside {
   margin: 10px 0;
 }
 
-aside ul {
+.toc ul {
   padding-left: 1em;
 }
 
@@ -150,40 +173,21 @@ aside ul {
   .me {
     width: 100px;
   }
-  aside {
+  .toc {
     float: none;
+  }
+  .index {
+    display: block;
+  }
+  .index .container, .index aside {
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 960px) {
-  .blog {
+  article {
     padding: 0 10%;
   }
-}
-
-/* Navigation bar */
-nav {
-  overflow: hidden;
-  text-align: center;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #4f4f4f;
-}
-
-.nav-item {
-  text-decoration: none;
-  font-weight: bold;
-  padding: .5em;
-  margin: 3px;
-  font-size: 1.4rem;
-}
-
-.nav-item:hover {
-  text-decoration: underline;
-  color: #000;
-}
-
-.nav-item:focus {
-  outline: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -197,20 +201,14 @@ nav {
   a, .entry a {
     color: #6b96db;
   }
-  a:hover, .nav-item:hover {
+  a:hover {
     color: #ccc;
   }
-  aside {
+  .toc {
     border: 2px solid #000;
     background-color: #222;
   }
   code {
     background-color: #272822;
   }
-}
-
-.nav-item:focus {
-  outline: 0;
-  background: #ffbf47;
-  color: #000000;
 }

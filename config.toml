@@ -1,55 +1,16 @@
 baseURL = "https://humaidq.ae/"
-languageCode = "en-us"
+languageCode = "en-gb"
 title = "Humaid AlQassimi's Website"
 copyright = "The content of this site is CC BY-SA 4.0. The code of this site is BSD 2-Clause."
 preserveTaxonomyNames = true
 pygmentsUseClasses = true
 pygmentsCodeFences = true
-enableGitInfo = true
 disableHugoGeneratorInject = true
-#canonifyURLs = true
 [Params]
 	name = "Humaid AlQassimi"
 	images = ["img/me-2020.jpg"]
-	ISO8601 = "2006-01-02T15:04:05GMT"
-  	profilePicEnabled = true
 
 sectionPagesMenu = "main"
-
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 10
-  [[menu.main]]
-    identifier = "now"
-    name = "Now"
-    url = "/now/"
-    weight = 11
-  [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
-    weight = 20
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 30
-  [[menu.main]]
-    identifier = "gallery"
-    name = "Gallery"
-    url = "/gallery/"
-    weight = 40
-  [[menu.main]]
-    identifier = "xmath-pp"
-    url = "/xmath-pp/"
-    weight = -100
-  [[menu.main]]
-    identifier = "contribution"
-    url = "/contribution/"
-    weight = -100
 
 [taxonomies]
     location = "location"
@@ -58,4 +19,3 @@ sectionPagesMenu = "main"
 	startLevel = 3
 [markup.goldmark.renderer]
 	unsafe = true
-	xHTML = true

@@ -6,7 +6,6 @@ section: "Web Applications"
 License: AGPL-3.0-only
 Language: Go
 date: 2019-11-24
-site: https://ns2.humaidq.ae
 GoDoc: true
 HasBuilds: true
 LatestVersion: v0.1
@@ -14,7 +13,6 @@ IssueTracker: true
 Screenshot: "ns2-analysis.png"
 Description: "A trace analysis web app for Network Simulator 2 (ns2) trace files"
 Usability: 3
-draft: true
 ---
 ### 1. Description
 ![Screenshot of the analysis page showing statistics of the trace file and

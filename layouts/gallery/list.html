@@ -1,12 +1,13 @@
 {{ partial "header.html" . }}
+{{ partial "aside.html" . }}
+<section>
 <h2>{{ .Title }}</h2>
 {{ .Content }}
 {{if not .IsHome }}
   {{ range (where .Data.Pages "Section" "!=" "") }}
-  <div class="entry"><span class="date">{{ .Date.Format "2 Jan 2006" }}</span>
-	<a href="{{ .URL }}">{{ .Title }}</a>
-	<div class="meta"><p>{{.Summary}}</p></div></div>
+  <div class="entry"><span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+	<a href="{{ .Permalink }}">{{ .Title }}</a></div>
   {{ end }}
-    
 {{ end }}
+</section>
 {{ partial "footer.html" . }}
