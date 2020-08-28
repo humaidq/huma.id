@@ -11,8 +11,14 @@ Usability: 4
 
 ### Description
 
+As a class representative for my class at university, I have built a platform
+for class representatives to share information to students and allow them to
+post tickets and complaints anonymously.
 
-A platform for class representatives to share information to students.
+This project has been done in collaboration with my fellow class representative
+(now school officer) [Alakbar](https://alak.bar).
+
+### Functionality
 
 This platform currently has the following functions:
 
