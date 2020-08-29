@@ -9,8 +9,8 @@ disableHugoGeneratorInject = true
 [Params]
 	name = "Humaid AlQassimi"
 	images = ["img/me-2020.jpg"]
-
-sectionPagesMenu = "main"
+[minify]
+	minifyOutput = true
 
 [taxonomies]
     location = "location"

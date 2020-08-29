@@ -100,13 +100,6 @@ footer p {
   margin: 5px;
 }
 
-pre {
-  border-radius: 10px;
-}
-
-code {
-  border-radius: 4px;
-}
 
 a:focus {
   outline: 2.5pt solid #ffbf47;
@@ -130,17 +123,13 @@ img {
 }
 
 /* Code blocks */
-pre code {
-  display: inline-block;
-  padding: 3.5px;
-  font-size: .8em;
-  border-radius: 2px;
-  white-space: pre-wrap;
-}
-
-code {
+pre {
   font-family: "SFMono-Regular","Menlo","Consolas","Liberation Mono","Courier New",monospace;
-  font-size: .9em;
+  background-color: #eee;
+  padding: 0.25rem 1rem;
+  margin: 0 -1rem;
+  overflow-x: auto;
+  font-size: 11pt;
 }
 
 .toc {
