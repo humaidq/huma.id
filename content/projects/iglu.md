@@ -2,12 +2,12 @@
 title: iglü
 section: "Others"
 date: 2020-04-23
-site: https://github.com/Nacdlow
+site: https://nacdlow.com
 Description: "A smart home system of the future (group project)."
 Usability: 4
 ---
 
-### What is this?
+### 1. Overview
 
 [**Check out our documentary (YouTube)**](https://www.youtube.com/watch?v=KMfItuTf2jQ)
 
@@ -37,7 +37,7 @@ future to a client. During the 7 months we have built:
   packaging plugins directly for the marketplace.
 - A marketplace website, generated with a static website generator ([Hugo]).
 
-### What tools were used?
+### 1.1. What tools were used?
 
 The core parts of the project (such as the web application server and plugin
 API) is written in [Go], but other languages have been used in different parts
@@ -54,7 +54,193 @@ After Effects, Premiere Pro, and Illustrator, these were used in making
 graphics, banners, logos, promotional video and other forms of artwork. We are
 lucky to have a group with a diverse range of skills.
 
-### Our group
+### 2. Description
+
+Each project has a its own description, each project will be listed below.
+
+#### 2.1. iglü server
+
+This is the core of the smart home system. This project contains most of the
+work done on the project. It is a self-contained project which includes:
+
+- Web server
+- Web app files and logic
+- Database (SQLite, or can connect to external databases)
+- Plugin API
+
+[Visit our demo website](https://demo.nacdlow.com) to try it out!
+
+
+It is the web server and control system for the smart home. Its purpose is to
+control home appliances and Internet-connected devices. It is self-contained,
+handling access-control among other things, and should work without Internet
+connection.
+
+The server is written in [Go], and uses the [macaron] web framework and [XORM]
+for the object-relational mapping library. We have built a custom plugin API
+which runs over Remote Procedure Calls (RPC) using HashiCorp's [go-plugin]
+library.
+
+For the front-end, iglü uses [MDBootstrap] for the basic design, which we have
+built upon. And to provide more interactivity and better user experience
+quickly, we have used [jQuery]. Other libraries are used such as [Chart.js],
+[FontAwesome], and [Skycons] (from Darksky) to add dynamic graphical elements
+on the page.
+
+These are some libraries and frameworks we have used to speed up development
+so we could focus on the product.
+
+##### 2.1.1. Building and running iglü server
+
+Since the source code of the project is provided, you may build and run iglü.
+
+You require the following packages:
+
+- git
+- Go (1.12+)
+- GNU Make
+- go-bindata
+
+Then clone the project, build, and run it.
+
+```sh
+$ git clone https://github.com/Nacdlow/iglu-server
+$ cd iglu-server
+$ make
+$ ./nacdlow-server run [--port 443] [--dev]
+```
+
+No database set-up is required, all required tables will be created
+automatically on an SQLite database file.
+
+#### 2.2. iglüOS
+
+iglüOS is our custom Raspbian Lite-based distribution built for Nacdlow's iglü.
+It allows you to have an OS image for the Raspberry Pi with iglü installed as a
+service, which boots on startup.
+
+It also allows you to also set up WiFi configuration (eduroam, in this case)
+for expo purposes.
+
+Our distribution includes the following changes:
+
+- Support for Real-time Clock (specifically, PCF8523), and removes the
+  `fake-hwclock`.
+- Support for using Raspberry Pi's Ethernet adapter (appears as Ethernet gadget
+  device over USB, static ip set to `10.0.0.2`).
+- Support for eduroam with pre-filled credentials.
+- Installs [iglü server](/iglu) and adds it as a service.
+- Installs and runs our [e-ink display program](/e-ink/) as a service.
+- Enables SPI for e-ink display support.
+
+We ran this distribution on a Raspberry Pi Zero W, which contains a Waveshare
+e-ink display and a real-time click (RTC). We placed this in a 3D-printed case
+printed on a Prusa 3D printer at the Edinburgh Hacklab.
+
+#### 2.3. godoc2markdown
+
+As we were working on private GitLab repositories, we weren't able to use
+[GoDoc](https://godoc.org) to generate documentation for our project.
+
+So we created a simple Unix-like tool which allows you to pipe the output of go
+doc to generate Markdown.
+
+After implementing this, we have created a script to generate our Wiki for the
+iglü server repository automatically, including a table-of-contents.
+
+I have released this program [as a separate project](/projects/godoc2markdown),
+which you may check out and use.
+
+#### 2.4. Dev DNS
+
+This is a custom Domain Name Server which returns a custom response for our
+domain, used for testing PWAs with HTTPS support (required by service workers).
+
+In our use case we set it up to resolve `local.nacdlow.com` to our local
+computer's IP address.
+
+It uses Miek Gieben's DNS library for both resolving and serving.
+
+#### 2.4. Plugin SDK
+
+This is our Software Development Kit for developing iglü server plugins in Go.
+It is based on HashiCorp's [go-plugin] library, which they use in their products.
+
+Plugins communicate with the iglü server via Remote Procedure Calls (RPC), this
+makes it so that if a plugin crashes, the server will continue running and
+allows us to restart the plugin. Also it allows us to create plugins in
+different languages if required in the future.
+
+This SDK provides a Go interface which can be implemented so the server may
+load the binary.
+
+#### 2.5. Plugin Packager
+
+This is our internal plugin package program, which allows us to:
+
+- Generate/check manifests
+- Cross-compile to multiple platforms
+- Strip binaries
+- Calculate checksums
+- Archive the binary (using `xz`)
+
+It then places it in the marketplace repository, and stores them in categories
+depending on the platform (just like Debian's APT).
+
+#### 2.6. Marketplace
+
+This is iglü marketplace website and plugin repository. It contains the
+descriptions of all plugins, and their compiled binaries.
+
+The site is built with [Hugo], and is statically generated
+(just like this current website).
+
+Visit the marketplace: <https://market.nacdlow.com>
+
+#### 2.7 Payment Gateway
+
+Our Stripe testing payment gateway, which is built for our static Marketplace
+website. This is deployed on [Heroku] and uses Stripe's Go library.
+
+#### 2.8. Waveshare Driver Patch
+
+We built a patch for the Python Waveshare `epd2in13_V2.py` driver, which flips
+the output upside-down.
+
+This is because of the limitations of our 3D printed build, and where the USB
+power port is located on the Raspberry Pi Zero W.
+
+Instructions on using this patch is available in the [project's repository
+page](https://github.com/Nacdlow/waveshare-driver-patch).
+
+#### 2.9. Minecraft Simulation Spigot Plugin
+
+We created a [Bukkit]/[Spigot] [Minecraft] server plugin, which allows us to
+sync aspects of the simulated iglü environment in a Minecraft game world. We
+did this instead of building our own custom simulation environment, whether
+that be a simple interface or a custom simulation game.
+
+This allowed us to save a lot of time in simulating, as Minecraft is a game
+which is easy to extend.
+
+#### 2.10. Minecraft Simulation iglü Plugin
+
+To make the Minecraft Spigot plugin work, we built a iglü plugin, which is
+built entirely using our Plugin SDK. This allows our Minecraft Spigot plugin to
+display in-game lights and devices in the "search devices" list.
+
+#### 2.11. LIFX iglü Plugin
+
+To demonstrate that the system may also interact with the real world, we
+created an iglü plugin which integrates the LIFX Wi-Fi enabled LED bulbs to
+hook into iglü, displaying all the available lights registered on the account.
+
+#### 2.12. Light Mode iglü Plugin
+
+This is an iglü plugin which customises the look-and-feel of iglü using web
+extensions, adding a light theme to the iglü interface.
+
+### 3. Our Group
 
 The group consists of:
 
@@ -66,11 +252,14 @@ The group consists of:
 - [Ruaridh Mollica]\: Organisational Manager
 
 
-### Open-sourcing
+### 4. Project Source Code
 
-The projects are still pending to be released under an open-source license.
+Although the projects are not open-sourced, the projects' source code may still
+be browsed on our [GitHub organisation](https://github.com/Nacdlow).
 
-The projects' source code can be found on our [GitHub organisation](https://github.com/Nacdlow).
+This means you may only view the source code, you may not be able to use any
+parts of the source code or redistribute it. The project remains the exclusive
+rights of the project creators.
 
 [Alakbar Zeynalzade]: https://www.linkedin.com/in/alakbarzeynalzade/
 [Amaanullah Akram]: https://www.linkedin.com/in/amaanakram/
@@ -86,5 +275,20 @@ The projects' source code can be found on our [GitHub organisation](https://gith
 [Go]: https://go.dev
 [Tinkercad]: https://www.tinkercad.com/
 [Stripe]: https://stripe.com/
+
+[macaron]: https://go-macaron.com
+[XORM]: https://xorm.io
+[go-plugin]: https://github.com/hashicorp/go-plugin
+[MDBootstrap]: https://mdbootstrap.com
+[jQuery]: https://jquery.com
+[Chart.js]: https://github.com/hashicorp/go-plugin
+[Skycons]: https://darkskyapp.github.io/skycons/
+[FontAwesome]: https://fontawesome.com/
+
+[Bukkit]: https://bukkit.gamepedia.com/Main_Page
+[Spigot]: https://spigotmc.org
+[Minecraft]: https://minecraft.net
+
+[Heroku]: https://heroku.com
 
 [AGPL license]: https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)
