@@ -29,12 +29,3 @@
  font-size:.8rem;
  color:#555
 }
-@media (prefers-color-scheme: dark) {
-  .webring .article {
-    background-color: #222;
-    border: 1px solid #000;
-  }
-  .webring .attribution {
-    color: #eee;
-  }
-}

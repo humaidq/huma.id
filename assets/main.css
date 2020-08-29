@@ -5,10 +5,10 @@ html {
 }
 
 body {
-  font-family: "Source Sans Pro", "Lucidia Grande", "Segoe UI", "Roboto", sans-serif;
+  font-family: "Inter", "San Fransisco", -apple-system, "BlinkMacSystemFont", "Source Sans Pro", "Roboto", sans-serif;
   font-size: 14pt;
   line-height: 1.4;
-  background-color: #fff;
+  background-color: #fff; /* for dillo */
   max-width: 1250px;
   margin: 0 auto;
 }
@@ -164,6 +164,7 @@ pre {
   }
   .toc {
     float: none;
+    max-width: 80%;
   }
   .index {
     display: block;
@@ -176,28 +177,5 @@ pre {
 @media only screen and (min-width: 960px) {
   article {
     padding: 0 10%;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #202125;
-    color: #cfcfcf;
-  }
-  h1, h2, h3, h4, h5, h6, footer {
-    color: #ccc;
-  }
-  a, .entry a {
-    color: #6b96db;
-  }
-  a:hover {
-    color: #ccc;
-  }
-  .toc {
-    border: 2px solid #000;
-    background-color: #222;
-  }
-  code {
-    background-color: #272822;
   }
 }
