@@ -49,16 +49,20 @@ to update the e-ink display was written in Python.
 
 We even used tools such as [Adobe XD] for prototyping and usability testing,
 [Tinkercad] for creating the iglü case which was 3D printed (thanks to
-Edinburgh Hacklab). Other tools used were GIMP, Adobe Lightroom, Photoshop,
-After Effects, Premiere Pro, and Illustrator, these were used in making
-graphics, banners, logos, promotional video and other forms of artwork. We are
-lucky to have a group with a diverse range of skills.
+Edinburgh Hacklab). Other tools used were Blender, GIMP, Adobe Lightroom,
+Photoshop, After Effects, Premiere Pro, and Illustrator, these were used in
+making graphics, banners, logos, promotional video and other forms of artwork.
+We are lucky to have a group with a diverse range of skills.
 
 ### 2. Description
 
 Each project has a its own description, each project will be listed below.
 
 #### 2.1. iglü server
+
+![Screenshot of iglü's dashboard, showing a greeting, the outside temperature,
+the solar battery status, the energy consumption and usage chart, favourite
+shortcuts, and energy tips](iglu.png)
 
 This is the core of the smart home system. This project contains most of the
 work done on the project. It is a self-contained project which includes:
@@ -115,6 +119,9 @@ automatically on an SQLite database file.
 
 #### 2.2. iglüOS
 
+![a screenshot of the boot messages, with the snippet in the middle stating
+Welcome to igluOS (snowball)](igluOS.jpeg)
+
 iglüOS is our custom Raspbian Lite-based distribution built for Nacdlow's iglü.
 It allows you to have an OS image for the Raspberry Pi with iglü installed as a
 service, which boots on startup.
@@ -139,6 +146,8 @@ printed on a Prusa 3D printer at the Edinburgh Hacklab.
 
 #### 2.3. godoc2markdown
 
+![a screenshot of the generated documentation](godoc.jpg)
+
 As we were working on private GitLab repositories, we weren't able to use
 [GoDoc](https://godoc.org) to generate documentation for our project.
 
@@ -153,6 +162,10 @@ which you may check out and use.
 
 #### 2.4. Dev DNS
 
+![a screenshot of the dev dns server running, indicating that it will resolve
+local.nacdlow.com to 10.0.0.219, and other queries will be redirected to
+8.8.8.8](devdns.jpg)
+
 This is a custom Domain Name Server which returns a custom response for our
 domain, used for testing PWAs with HTTPS support (required by service workers).
 
@@ -162,6 +175,9 @@ computer's IP address.
 It uses Miek Gieben's DNS library for both resolving and serving.
 
 #### 2.4. Plugin SDK
+
+![a screenshot of a code snippet with an implementation of a test plugin,
+displaying the OnLoad and GetManifest functions stubbed](plugin-sdk.jpg)
 
 This is our Software Development Kit for developing iglü server plugins in Go.
 It is based on HashiCorp's [go-plugin] library, which they use in their products.
@@ -176,6 +192,11 @@ load the binary.
 
 #### 2.5. Plugin Packager
 
+![a screenshot of the plugin packager, with a text input of the plugin
+directory to package, fields to display the plugin manifest, and tick boxes to
+select architectures to build for. At the bottom there is a field to input the
+repository directory, and a big "Package" button.](plugin-packager.jpg)
+
 This is our internal plugin package program, which allows us to:
 
 - Generate/check manifests
@@ -189,6 +210,10 @@ depending on the platform (just like Debian's APT).
 
 #### 2.6. Marketplace
 
+![a screenshot of the marketplace, showing the scheduler as the featured
+plugin, priced at 1.99 pound sterling, there are options to view plugins by
+category, and a list of plugins](marketplace.png)
+
 This is iglü marketplace website and plugin repository. It contains the
 descriptions of all plugins, and their compiled binaries.
 
@@ -199,10 +224,29 @@ Visit the marketplace: <https://market.nacdlow.com>
 
 #### 2.7 Payment Gateway
 
+![a screenshot of the Stripe payment gateway, on the payment page for the
+Scheduler plugin, priced at 1.99 pound sterling, there are fields on the right
+for the card payment details](payment.jpg)
+
 Our Stripe testing payment gateway, which is built for our static Marketplace
 website. This is deployed on [Heroku] and uses Stripe's Go library.
 
-#### 2.8. Waveshare Driver Patch
+#### 2.8. E-Ink Display
+
+![a photograph of the iglü device, which is a 3D printed rounded box with an
+e-ink display, showing the URL of the system at local.nacdlow.com, the power
+generation as 40 kilowatts, the power consumption at 120 kilowatts, and the
+battery level at 57%](eink.jpg)
+
+We wrote a program in Python which pulls in data from the smart home
+system and displays it on the e-ink display. We used FontAwesome icons and
+converted them to bitmaps to support the display.
+
+This program uses our [Waveshare Driver Patch](/waveshare-driver-patch/) so the
+display is flipped upside-down, due to the space constriction in the 3D printed
+case.
+
+#### 2.9. Waveshare Driver Patch
 
 We built a patch for the Python Waveshare `epd2in13_V2.py` driver, which flips
 the output upside-down.
@@ -213,7 +257,7 @@ power port is located on the Raspberry Pi Zero W.
 Instructions on using this patch is available in the [project's repository
 page](https://github.com/Nacdlow/waveshare-driver-patch).
 
-#### 2.9. Minecraft Simulation Spigot Plugin
+#### 2.10. Minecraft Simulation Spigot Plugin
 
 We created a [Bukkit]/[Spigot] [Minecraft] server plugin, which allows us to
 sync aspects of the simulated iglü environment in a Minecraft game world. We
@@ -223,19 +267,19 @@ that be a simple interface or a custom simulation game.
 This allowed us to save a lot of time in simulating, as Minecraft is a game
 which is easy to extend.
 
-#### 2.10. Minecraft Simulation iglü Plugin
+#### 2.11. Minecraft Simulation iglü Plugin
 
 To make the Minecraft Spigot plugin work, we built a iglü plugin, which is
 built entirely using our Plugin SDK. This allows our Minecraft Spigot plugin to
 display in-game lights and devices in the "search devices" list.
 
-#### 2.11. LIFX iglü Plugin
+#### 2.12. LIFX iglü Plugin
 
 To demonstrate that the system may also interact with the real world, we
 created an iglü plugin which integrates the LIFX Wi-Fi enabled LED bulbs to
 hook into iglü, displaying all the available lights registered on the account.
 
-#### 2.12. Light Mode iglü Plugin
+#### 2.13. Light Mode iglü Plugin
 
 This is an iglü plugin which customises the look-and-feel of iglü using web
 extensions, adding a light theme to the iglü interface.
@@ -261,12 +305,12 @@ This means you may only view the source code, you may not be able to use any
 parts of the source code or redistribute it. The project remains the exclusive
 rights of the project creators.
 
-[Alakbar Zeynalzade]: https://www.linkedin.com/in/alakbarzeynalzade/
-[Amaanullah Akram]: https://www.linkedin.com/in/amaanakram/
+[Alakbar Zeynalzade]: https://alak.bar
+[Amaanullah Akram]: https://amaanakram.tech/
 [Humaid AlQassimi]: https://humaidq.ae
 [Mark S Bird]: https://www.linkedin.com/in/mark-bird-/
 [Numan Ali]: https://github.com/n-ali1
-[Ruaridh Mollica]: https://www.linkedin.com/in/ruaridhmollica/
+[Ruaridh Mollica]: https://ruaridhmollica.com/
 
 [LaTeX]: https://www.latex-project.org/
 [Adobe XD]: https://www.adobe.com/products/xd.html
