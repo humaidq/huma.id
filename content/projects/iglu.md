@@ -64,7 +64,7 @@ Photoshop, After Effects, Premiere Pro, and Illustrator, these were used in
 making graphics, banners, logos, promotional video and other forms of artwork.
 We are lucky to have a group with a diverse range of skills.
 
-## 1.2. Links & Infrastructure
+### 1.2. Links & Infrastructure
 
 The following are all of the services part of the project.
 
