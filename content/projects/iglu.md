@@ -35,7 +35,17 @@ future to a client. During the 7 months we have built:
   Enterprise with wpa\_supplicant, etc).
 - A plugin packager (with GUI) which speeds up cross-compiling, compressing and
   packaging plugins directly for the marketplace.
-- A marketplace website, generated with a static website generator ([Hugo]).
+- A [marketplace website](https://market.nacdlow.com), generated with a static website generator ([Hugo]).
+- A [marketing (corporate) website](https://marketing.nacdlow.com) describing
+  the company's goal, the team members, and information regarding our product.
+
+Afterwards, we converted [nacdlow.com](https://nacdlow.com) into a portfolio
+website describing each of the project we worked on. The description in section
+two of this document is adapted from the portfolio website.
+
+You may also check out our coursework's [stage 3
+report](https://nacdlow.com/nacdlow-stage-3-report.pdf) which goes in detail
+regarding the entire project.
 
 ### 1.1. What tools were used?
 
@@ -53,6 +63,38 @@ Edinburgh Hacklab). Other tools used were Blender, GIMP, Adobe Lightroom,
 Photoshop, After Effects, Premiere Pro, and Illustrator, these were used in
 making graphics, banners, logos, promotional video and other forms of artwork.
 We are lucky to have a group with a diverse range of skills.
+
+## 1.2. Links & Infrastructure
+
+The following are all of the services part of the project.
+
+- [nacdlow.com](https://nacdlow.com)
+	- The group portfolio website, used to be the marketing website.
+- [marketing.nacdlow.com](https://marketing.nacdlow.com)
+	- The Wordpress marketing website built by Mark.
+- [demo.nacdlow.com](https://demo.nacdlow.com)
+	- Virtual expo demo and (now defunct) Minecraft server instance
+	  information page.
+- [app.nacdlow.com](https://app.nacdlow.com)
+	- Virtual expo iglü application instance, linked from the demo page.
+- local.nacdlow.com
+	- This is used to be the local testing domain, this is usually set on the
+	  developers' machines to the loopback address. This is used with the Dev
+	  DNS application described in the next section.
+- [market.nacdlow.com](https://market.nacdlow.com)
+	- The iglü marketplace which hosts the plugin descriptions and their
+	  binaries.
+- [payment.nacdlow.com](https://payment.nacdlow.com)
+	- The Stripe test payment gateway for the marketplace.
+- [wiki.nacdlow.com](https://wiki.nacdlow.com)
+	- The team's internal development wiki, contains information about code and
+	  design style guides, group organisation and structure information,
+	  learning material, and more.
+	  
+A mail server has been setup, and each member of the team has an inbox (such as
+[humaid@nacdlow.com](mailto:humaid@nacdlow.com)). A general broadcast email was
+also created. This is as we try to manage our group as similarly to an actual
+company as possible, and from that we have learned a lot.
 
 ### 2. Description
 
@@ -134,15 +176,26 @@ Our distribution includes the following changes:
 - Support for Real-time Clock (specifically, PCF8523), and removes the
   `fake-hwclock`.
 - Support for using Raspberry Pi's Ethernet adapter (appears as Ethernet gadget
-  device over USB, static ip set to `10.0.0.2`).
+  device over USB, static IP set to `10.0.0.2`).
 - Support for eduroam with pre-filled credentials.
-- Installs [iglü server](/iglu) and adds it as a service.
-- Installs and runs our [e-ink display program](/e-ink/) as a service.
+- Installs iglü server and adds it as a service.
+- Installs and runs our e-ink display program as a service.
 - Enables SPI for e-ink display support.
 
 We ran this distribution on a Raspberry Pi Zero W, which contains a Waveshare
 e-ink display and a real-time click (RTC). We placed this in a 3D-printed case
 printed on a Prusa 3D printer at the Edinburgh Hacklab.
+
+To create this custom distribution, we created a set of Bash scripts which
+modifies Raspbian Lite. This is done by resizing the main partition in the
+`.img` file using `qemu`, and using `kpartx` to mount the partitions to
+loop devices. Once mounted, the script performs any modifications to the files,
+utilising `proot` along with `qemu-arm-static` to run commands for updating and
+installing packages, enabling custom `systemd` services, and do other changes
+to the system.
+
+The resulting image is then flashed to a microSD card, and inserted in the
+Raspberry Pi fully configured and working.
 
 #### 2.3. godoc2markdown
 
@@ -197,7 +250,7 @@ directory to package, fields to display the plugin manifest, and tick boxes to
 select architectures to build for. At the bottom there is a field to input the
 repository directory, and a big "Package" button.](plugin-packager.jpg)
 
-This is our internal plugin package program, which allows us to:
+This is our internal plugin package graphical program, which allows us to:
 
 - Generate/check manifests
 - Cross-compile to multiple platforms
@@ -206,7 +259,7 @@ This is our internal plugin package program, which allows us to:
 - Archive the binary (using `xz`)
 
 It then places it in the marketplace repository, and stores them in categories
-depending on the platform (just like Debian's APT).
+depending on the platform/architecture (just like Debian's APT).
 
 #### 2.6. Marketplace
 
@@ -215,7 +268,11 @@ plugin, priced at 1.99 pound sterling, there are options to view plugins by
 category, and a list of plugins](marketplace.png)
 
 This is iglü marketplace website and plugin repository. It contains the
-descriptions of all plugins, and their compiled binaries.
+descriptions of all plugins, and their compiled binaries. The website is also
+linked to our Payment Gateway for purchasing paid plugins.
+
+To download a package, the marketplace redirects the user to the local iglü
+instance prompting the download of the plugin.
 
 The site is built with [Hugo], and is statically generated
 (just like this current website).
@@ -231,6 +288,11 @@ for the card payment details](payment.jpg)
 Our Stripe testing payment gateway, which is built for our static Marketplace
 website. This is deployed on [Heroku] and uses Stripe's Go library.
 
+This payment gateway may only be accessed through the Marketplace, and since
+this is using Stripe's test mode, you may use their [test card
+numbers](https://stripe.com/docs/testing) to continue through the purchase. You
+may try `4242 4242 4242 4242` with any expiry/CVV number.
+
 #### 2.8. E-Ink Display
 
 ![a photograph of the iglü device, which is a 3D printed rounded box with an
@@ -242,7 +304,7 @@ We wrote a program in Python which pulls in data from the smart home
 system and displays it on the e-ink display. We used FontAwesome icons and
 converted them to bitmaps to support the display.
 
-This program uses our [Waveshare Driver Patch](/waveshare-driver-patch/) so the
+This program uses our Waveshare Driver Patch so the
 display is flipped upside-down, due to the space constriction in the 3D printed
 case.
 
@@ -289,7 +351,7 @@ extensions, adding a light theme to the iglü interface.
 The group consists of:
 
 - [Alakbar Zeynalzade]\: Reporter and Organisational Manager
-- [Amaanullah Akram]\: Organisational and Technical Manager
+- [Amaan Akram]\: Organisational and Technical Manager
 - [Humaid AlQassimi]\: Leader and Technical Manager
 - [Mark S Bird]\: Liaison
 - [Numan Ali]\: Technical Manager
@@ -306,7 +368,7 @@ parts of the source code or redistribute it. The project remains the exclusive
 rights of the project creators.
 
 [Alakbar Zeynalzade]: https://alak.bar
-[Amaanullah Akram]: https://amaanakram.tech/
+[Amaan Akram]: https://amaanakram.tech/
 [Humaid AlQassimi]: https://humaidq.ae
 [Mark S Bird]: https://www.linkedin.com/in/mark-bird-/
 [Numan Ali]: https://github.com/n-ali1
