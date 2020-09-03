@@ -22,4 +22,5 @@ feeds() {
 	feed "Gokberk Yaltirakli's blog" "https://www.gkbrk.com/feed.xml"
 	feed "Nora's blog" "https://nora.codes/index.xml"
 	feed "Hillel Wayne's blog" "https://www.hillelwayne.com/post/index.xml"
+	feed "EuAndreh's blog" "https://euandre.org/feed.blog.en.atom"
 }

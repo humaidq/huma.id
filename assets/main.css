@@ -132,6 +132,10 @@ pre {
   font-size: 11pt;
 }
 
+code {
+  background-color: #eee;
+}
+
 .toc {
   border: 2px solid #777;
   background-color: #eee;
