@@ -17,5 +17,6 @@ disableHugoGeneratorInject = true
 
 [markup.tableOfContents]
 	startLevel = 3
+	endLevel = 4
 [markup.goldmark.renderer]
 	unsafe = true

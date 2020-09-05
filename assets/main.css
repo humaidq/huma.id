@@ -136,19 +136,6 @@ code {
   background-color: #eee;
 }
 
-.toc {
-  border: 2px solid #777;
-  background-color: #eee;
-  padding: .5em 2.5em;
-  max-width: 400px;
-  float: right;
-  margin: 10px 0;
-}
-
-.toc ul {
-  padding-left: 1em;
-}
-
 /* Responsiveness */
 @media only screen and (max-width: 780px) {
   .gal {

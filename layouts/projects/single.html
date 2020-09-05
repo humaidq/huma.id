@@ -1,4 +1,10 @@
 {{ partial "header.html" . }}
+<aside>
+    <header>
+    <h2>Table of Contents</h2>
+    </header>
+    {{.TableOfContents}}
+</aside>
 <section>
 <p><a href="/">&lt; Go back</a></p>
 <h2>{{ .Title }}</h2>
@@ -20,12 +26,6 @@
   {{if .Params.HasBuilds}}<a href="https://builds.sr.ht/~humaid/{{.Params.GitURL}}?" rel="noreferrer" target="_blank"><img src="https://builds.sr.ht/~humaid/{{.Params.GitURL}}.svg" alt="builds.sr.ht status" /></a>{{end}}
   </p>
 </div>
-<aside class="toc">
-    <header>
-    <h2>Table of Contents</h2>
-    </header>
-    {{.TableOfContents}}
-</aside>
 {{.Content}}
 </section>
 {{ partial "footer.html" . }}
