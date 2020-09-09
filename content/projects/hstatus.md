@@ -5,11 +5,11 @@ section: "Others"
 License: BSD-2-Clause
 Language: Rust
 date: 2020-04-12
-LatestVersion: v0.1
+LatestVersion: v0.2
 HasBuilds: true
 MailingList: general
 IssueTracker: false
-Description: "A dwm status monitor updater with multiple timezones and COVID19 stats."
+Description: "A dwm status monitor updater with multiple timezones and low battery flair."
 Usability: 4
 ---
 
@@ -20,12 +20,11 @@ hstatus is a simple dwm status monitor updater. It currently includes:
 - Multiple timezones (Local and UK time, using [chrono])
 - Battery status
 - Load status
-- COVID19 status (with [caching], updates every 6 hours)
+- Low battery flair
 
 The reason for creating this project was to learn [Rust].
 
 [chrono]: https://crates.io/crates/chrono
-[caching]: https://crates.io/crates/cached
 [Rust]: https://www.rust-lang.org/
 
 ### 2. Requirements
@@ -37,15 +36,10 @@ The following packages must be installed on your system.
 - libX11-devel
 - dwm _(obviously)_
 
-And if you decide to keep the COVID19 status:
-
-- libressl-devel (or your system's equivalent)
-- curl
-
 ### 3. Copying and contributing
 
-This program is written by Humaid AlQassimi,
-and is distributed under the BSD 2 Clause license.  
+This program is written by Humaid AlQassimi, and is distributed under the BSD 2
+Clause license.  
 
 ### 4. Download and build
 
@@ -59,4 +53,7 @@ $ cargo build
 
 - v0.1 *(Apr 12 2020)*
   - Initial release
-
+- v0.2 *(Sep 9 2020)*
+  - Added low battery flair
+  - Remove COVID stats
+  - Separated status items in standalone functions
