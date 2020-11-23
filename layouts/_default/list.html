@@ -1,5 +1,4 @@
 {{ partial "header.html" . }}
-{{if not .Params.nosidebar}}{{ partial "aside.html" . }}{{end}}
 <section>
 {{if not .IsHome }}<h2>{{ .Title }}</h2>{{end}}
 {{ .Content }}
@@ -7,30 +6,16 @@
 	{{ range .Data.Pages }}<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end }}
 </ul>{{ end }}
 {{if .IsHome}}
-  <div class="index">
-    <div class="container">
-      <h2>Blog Posts <a href="{{.Site.BaseURL}}blog/index.xml">(rss)</a></h2>
-      {{ range (where .Site.RegularPages "Section" "blog")}}
-        <div class="entry">
-          <span class="date">{{ .Date.Format "January 2, 2006" }}</span>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </div>
-      {{end}}
-    </div>
-
-    <div class="container">
-      <h2>Projects</h2>
-      {{ range (where .Site.RegularPages "Section" "projects")}}
-        <div class="entry project"><a href="{{ .Permalink }}">{{ .Title }}</a>
-        {{ if .Params.LatestVersion }} &middot; <small>({{.Params.LatestVersion}})</small>{{end}}
-        &middot; {{if .Params.Language}}<span class="lang">{{.Params.Language}}</span>
-        &middot; {{end}}{{ .Date.Format "2006" }}
-        <div class="meta">
-        {{if .Params.Description}}<p>{{.Params.Description}}</p>{{end}}
-        </div></div>
-      {{end}}
-    </div>
-  </div>
+<h2>Links</h2>
+  <img src="/avatar.jpg" class="me" alt="A picture of Humaid smiling, not while looking at the camera. Possibly in a discussion with people off-screen." />
+  <dl>
+    <dt>Email</dt>
+    <dd><a rel="me" href="mailto:public@humaidq.ae">public@humaidq.ae</a></dd>
+    <dt>Sourcehut</dt>
+    <dd><a rel="noreferrer noopener me" href="https://git.sr.ht/~humaid">~humaid</a></dd>
+    <dt>PGP key</dt>
+    <dd><a rel="pgpkey authn" href="/contact/pgp.txt">C4350A2D</a>
+  </dl>
 {{end}}
 </section>
 {{ partial "footer.html" . }}

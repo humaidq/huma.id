@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+<section>
+{{if not .IsHome }}<h2>{{ .Title }}</h2>{{end}}
+{{ .Content }}
+{{ range .Data.Pages }}
+  <div class="entry project"><a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{ if .Params.LatestVersion }} &middot; <small>({{.Params.LatestVersion}})</small>{{end}}
+  &middot; {{if .Params.Language}}<span class="lang">{{.Params.Language}}</span>
+  &middot; {{end}}{{ .Date.Format "2006" }}
+  <div class="meta">
+  {{if .Params.Description}}<p>{{.Params.Description}}</p>{{end}}
+  </div></div>
+{{end}}
+</section>
+{{ partial "footer.html" . }}
+

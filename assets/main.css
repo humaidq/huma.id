@@ -9,7 +9,7 @@ body {
   font-size: 14pt;
   line-height: 1.4;
   background-color: #fff; /* for dillo */
-  max-width: 1250px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -30,9 +30,10 @@ section {
   width: 40%;
 }
 
-.index aside img {
+.me {
   display: block;
-  width: 200px;
+  float: right;
+  width: 148px;
   margin: 0 auto;
   border-radius: 20px;
 }
@@ -95,11 +96,6 @@ footer {
   text-align: center;
   color: #2f2f2f;
 }
-
-footer p {
-  margin: 5px;
-}
-
 
 a:focus {
   outline: 2.5pt solid #ffbf47;

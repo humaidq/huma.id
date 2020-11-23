@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{.Site.BaseURL}}blog/index.xml">
   {{ $style := resources.Get "main.css"}}{{ $syntax := resources.Get "syntax.css"}}
-  {{ $css := slice $style $syntax | resources.Concat "bundle.css" | resources.Minify | resources.Fingerprint }}
+  {{ $css := slice $style $syntax | resources.Concat "bundle.css" | resources.Minify }}
   <link rel="stylesheet" href="{{ $css.Permalink }}">
-  {{if eq .Type "blog"}}{{ $webring := resources.Get "webring.css" | resources.Minify | resources.Fingerprint }}
+  {{if eq .Type "blog"}}{{ $webring := resources.Get "webring.css" | resources.Minify }}
   <link rel="stylesheet" href="{{ $webring.Permalink }}">{{end}}
   <title>{{if .Title}}{{ .Title }} - {{end}}Humaid AlQassimi</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
@@ -16,5 +15,10 @@
 </head>
 <header>
   <h1 class="title">Humaid AlQassimi</h1>
+  <nav>
+    <p class="c"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot;
+    <a href="/projects">Projects</a> &middot; <a href="/gallery">Gallery</a>
+    &middot; <a href="/now">Now</a></p>
+  </nav>
 </header>
 <main class="index">
