@@ -17,10 +17,6 @@ section {
   width: 100%;
 }
 
-.container {
-  margin: 15px;
-}
-
 .index {
   display: flex;
   flex-direction: row;
@@ -36,11 +32,6 @@ section {
   width: 148px;
   margin: 0 auto;
   border-radius: 20px;
-}
-
-.lang {
-  font-weight: 600;
-  font-size: 12pt;
 }
 
 /* Typography */
@@ -73,10 +64,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .project a {
   display: inline;
-}
-
-.index .container {
-  width: 50%;
 }
 
 .meta a {

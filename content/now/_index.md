@@ -6,12 +6,12 @@ description: What I am doing right now...
 *This is a [now page](https://nownownow.com/about), which is where I write a
 summary of what I am doing right now.*
 
-**Last updated:** 30th August 2020
+**Last updated:** 23rd November 2020
 
-I'm currently a Computer Science student at Heriot-Watt University, preparing
-to start the last year of my undergraduate study. I have been working on the
-[Platform](/projects/platform/) project recently with
-[Alakbar](https://alak.bar).
+I'm currently a Computer Science student at Heriot-Watt University, doing my
+final year of my undergraduate study. I'm currently working on my dissertation
+project, which is a web application that allows users to build their own Linux
+distribution.
 
 I also try to manage my time and work on my [existing open-source
-projects](/).
+projects](/projects/).
