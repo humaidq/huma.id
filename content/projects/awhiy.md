@@ -32,6 +32,7 @@ page to my server which hosts
 The following programs should be installed on your system.
 
 - Python 3 (tested with 3.9.1)
+- [minify](https://github.com/tdewolff/minify) (optional)
 
 Required pip packages are listed in `requirements.txt`.
 
