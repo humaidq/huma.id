@@ -14,13 +14,13 @@ First you need to install `dbus`, `eudevd`, and `elogind` if you haven't
 installed it yet.
 
 ```sh
-# xbps-install -Sy dbus eudevd elogind
+# xbps-install -Sy dbus eudev elogind
 ```
 
 You have to enable those services.
 
 ```sh
-# ln -s /etc/sv/{dbus,eudevd,elogind} /var/service/
+# ln -s /etc/sv/{dbus,udevd,elogind} /var/service/
 ```
 
 Now you need to install Yubikey packages:
