@@ -6,7 +6,7 @@ section: "Others"
 date: 2021-02-16
 language: Python
 license: BSD-2-Clause
-site: https://areweherdimmuneyet.humaidq.ae
+site: https://areweherdimmuneyet.huma.id
 Description: "A herd-immunity tracker for the COVID-19 vaccine race in the UAE."
 Usability: 4
 ---
@@ -25,7 +25,7 @@ comma-separated values (CSV) file, which is used in the estimation model.
 The program also generates an HTML page with the latest data and graph based on
 `template.html`. There is a `make.sh` file, which is what I use to push the
 page to my server which hosts
-[areweherdimmuneyet.humaidq.ae](https://areweherdimmuneyet.humaidq.ae).
+[areweherdimmuneyet.huma.id](https://areweherdimmuneyet.huma.id).
 
 ### 2. Requirements
 

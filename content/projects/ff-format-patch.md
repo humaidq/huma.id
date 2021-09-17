@@ -9,6 +9,8 @@ date: 2019-10-24
 IssueTracker: true
 Description: "A patch for FF v2.3 to allow steps to be formatted for humans."
 Usability: 4
+aliases:
+  - /ff
 ---
 
 ### 1. Description

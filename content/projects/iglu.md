@@ -5,6 +5,10 @@ date: 2020-04-23
 site: https://nacdlow.com
 Description: "A smart home system of the future (group project)."
 Usability: 4
+aliases:
+  - /iglu
+  - /igloo
+  - /iglo
 ---
 
 ### 1. Overview
@@ -369,7 +373,7 @@ rights of the project creators.
 
 [Alakbar Zeynalzade]: https://alak.bar
 [Amaan Akram]: https://amaanakram.tech/
-[Humaid AlQassimi]: https://humaidq.ae
+[Humaid AlQassimi]: https://huma.id
 [Mark S Bird]: https://www.linkedin.com/in/mark-bird-/
 [Numan Ali]: https://github.com/n-ali1
 [Ruaridh Mollica]: https://ruaridhmollica.com/

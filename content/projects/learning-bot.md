@@ -7,6 +7,8 @@ Description: "A GitLab bot for providing programming advice based on code repair
 Language: Go
 License: AGPL-3.0-only
 Usability: 4
+aliases:
+  - /lb
 ---
 
 ### Overview

@@ -7,6 +7,8 @@ license: AGPL-3.0
 site: https://github.com/hw-cs-reps/platform
 Description: "A platform for posting announcements, tickets, and complaints for students"
 Usability: 4
+aliases:
+  - /platform
 ---
 
 ### 1. Description
