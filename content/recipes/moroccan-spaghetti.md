@@ -1,0 +1,42 @@
+---
+title: Moroccan-style Spaghetti Bolognese
+date: 2021-01-17
+---
+
+This is a recipe I learned from [Abdelrahman](https://elkabbany.xyz). I was a
+bit skeptical at first when he started mixing in the moroccan seasoning with
+the minced meat, but so far this is my favourite spaghetti recipe. If you are
+Italian though, you should probably look away ;).
+
+
+### Ingredients
+
+- Minced beef (frozen or fresh)
+	- Preferrably less than 15% fat or "full fat" depending on where you
+	  live.
+- 3tbsp moroccan seasoning
+	- In the UK, Tesco sells this pre-mixed. If you cannot find it where
+	  you live, see below for the mix ratio and ingredients.
+- 2tbsp unsalted butter
+- Half an onion, chopped
+- Two pieces of garlic (optional)
+- 2/3 can/box of chopped tomato
+- Spaghetti pasta
+- Salt
+- Black pepper
+- Paprika
+- Shredded mozzarella
+- Parmigiano (as block, shred as needed)
+
+### Directions
+
+1. Prepare the spaghetti in a pot, add salt.
+2. On a separate, smaller pot, melt the butter.
+3. As the butter is melted, add the onion (and garlic if wanted).
+4. Once the onion becomes brown, add the minced beef.
+5. Stir until the beef is well-cooked. Season with paprika, salt, and black
+   pepper.
+6. Add in the chopped tomatos to the minced beef mix, and mix.
+7. Once the spaghetti is done, drain in a colander and put it back in the pot.
+8. When the sauce is ready, mix it in with the spaghetti.
+9. Mix in the mozzarella and shred in the parmigiano.
