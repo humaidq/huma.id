@@ -3,44 +3,42 @@ title: 'Jukebox Hopper Mod'
 GitURL: jukeboxhopper
 MailingList: general
 section: "Games"
-License: None
+License: BSD-2-Clause
 Language: Java
-date: 2018-12-17
+date: 2022-05-15
 Screenshot: "JukeboxHopperMod.gif"
 Description: "A simple Minecraft mod which allows you to use hoppers to insert records into jukeboxes."
 Usability: 4
+url: "/jb"
+aliases:
+  - "/projects/jukeboxhoppermod"
 ---
 
 ### 1. Description
-![Picture of mod in-game](../screenshots/JukeboxHopperMod.gif)
+![Picture of mod in-game](/projects/screenshots/JukeboxHopperMod.gif)
 
 This is a simple Minecraft mod which allows players to use
 a hopper to insert a record into a Jukebox.  
 
-### 2. Requirements
+### 2. Download and usage
 
-Requirements of using this mod:
+Place the mod jar file into the `mods` folder.
 
-- [Mod Coder Pack](https://minecraft.gamepedia.com/Programs_and_editors/Mod_Coder_Pack) for 1.12
-- [Minecraft](https://minecraft.net) 1.12
-- Java 8
 
-### 3. Installation
+### 3. Building
 
-1. Copy the `src` directory into your MCP workspace.
-2. Locate the method `transferItemsOut()` in `net.minecraft.tileentity`.
-3. Add the following snippet at the beginning of the method:
+To build you need Java JDK installed. Then you are able to build using
+`./gradlew build`. The output JAR can be found in `build/libs`.
 
-```java
-// Make sure to import the package
-if(JukeboxHopperMod.canTransferRecord(this)){
-    JukeboxHopperMod.transferRecord(this);
-    return true;
-}
-```
+For testing, you may run `./gradlew runClient`. This would immediately
+run Minecraft with the mod pre-loaded.
 
-You should be able to have compile and run the game.  
+### 4. Changelog
 
-This is tested to work with Minecraft 1.12, it is possible to use
-this mod with other versions but may require some alternations
-to the code.
+- v2 (May 15, 2022)
+  - Switched to using Fabric Mod Loader and Mixins.
+  - Supports Minecraft 1.18.2.
+  - Logic fixes.
+- v1 (Dec 17, 2018)
+  - Initial release. Works with Minecraft 1.12, requires MCP and
+    manually creating the mod.
