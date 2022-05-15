@@ -8,6 +8,9 @@ date: 2019-07-09
 LatestVersion: v0.2.1
 Description: "A programming-themed space shooter game written in Lua with LÖVE framework."
 Usability: 3
+url: /pew
+aliases:
+  - /projects/pew-pew-shooter
 ---
 
 ### 1. Description

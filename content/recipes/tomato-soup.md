@@ -1,5 +1,8 @@
 ---
 title: Creamy Tomato Soup
+url: /tomato-soup
+aliases:
+  - /recipes/tomato-soup
 ---
 
 A basic creamy tomato soup but with cottage cheese.

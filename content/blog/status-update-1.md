@@ -1,6 +1,9 @@
 ---
 title: Status update, October 2019
 date: 2019-10-19
+url: /status-update-1
+aliases:
+  - "/blog/status-update-1"
 ---
 
 A lot has been happening the last month, we have started working on the

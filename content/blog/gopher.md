@@ -1,6 +1,9 @@
 ---
 title: "My Gopher Site"
 date: 2019-11-06
+url: /gopher
+aliases:
+  - "/blog/gopher"
 ---
 
 A Gopher version of my website is available! You can access it by visiting

@@ -12,6 +12,9 @@ IssueTracker: true
 LatestVersion: v0.2
 Description: "Humaid's un-POSIX-compliant shell."
 Usability: 2
+url: /hmsh
+aliases:
+  - /projects/hmsh
 ---
 
 ### 1. Description

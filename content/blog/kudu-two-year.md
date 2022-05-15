@@ -1,6 +1,9 @@
 ---
 title: "System76 Kudu4: After two years"
 date: 2019-11-16
+url: /kudu
+aliases:
+  - "/blog/kudu-two-year"
 ---
 
 Two years and three months ago, I have purchased the [Kudu4 laptop] from

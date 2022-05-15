@@ -1,6 +1,9 @@
 ---
 title: "Void Linux on the Lenovo ThinkPad T590"
 date: 2020-07-04
+url: /t590
+aliases:
+  - "/blog/thinkpad-t590"
 ---
 
 For almost two years, I had been using the System76 Kudu laptop. It was huge

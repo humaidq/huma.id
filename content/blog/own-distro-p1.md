@@ -1,6 +1,10 @@
 ---
 title: "Creating an Ubuntu-based distribution"
 date: 2020-05-01
+url: /own-distro
+aliases:
+  - "/blog/own-distro-p1"
+  - "/own-distro-p1"
 ---
 
 

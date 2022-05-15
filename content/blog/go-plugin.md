@@ -1,6 +1,9 @@
 ---
 title: "Reliable Plugins in Go"
 date: 2020-07-04
+url: /go-plugin
+aliases:
+  - "/blog/go-plugin"
 ---
 
 When working on our [university group project on a smart home

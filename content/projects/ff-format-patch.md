@@ -9,8 +9,9 @@ date: 2019-10-24
 IssueTracker: true
 Description: "A patch for FF v2.3 to allow steps to be formatted for humans."
 Usability: 4
+url: /ff
 aliases:
-  - /ff
+  - "/projects/ff-format-patch"
 ---
 
 ### 1. Description
@@ -39,7 +40,7 @@ later, and so is the patch.
 
 ### 4. Downloading and patching
 
-- [`steps-format-v1.patch`](steps-format-v1.patch) *(12K)*
+- [`steps-format-v1.patch`](/projects/ff-format-patch/steps-format-v1.patch) *(12K)*
 - [`FF-v2.3.tgz`](https://fai.cs.uni-saarland.de/hoffmann/ff/FF-v2.3.tgz)
 	*(72K)*
 
@@ -89,7 +90,7 @@ Binary compiled and linked on `Linux kudu 4.19.0-6-amd64 #1 SMP Debian
 4.19.67-2+deb10u1 (2019-09-20) x86_64 GNU/Linux`. Should work on most modern
 Linux x86_64 glibc systems.  
 
-- [`ff`](ff) *(936K)*
+- [`ff`](/projects/ff-format-patch/ff) *(936K)*
 
 ### 7. Change log
 

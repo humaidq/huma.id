@@ -11,6 +11,10 @@ MailingList: general
 IssueTracker: false
 Description: "A dwm status monitor updater with multiple timezones and low battery flair."
 Usability: 4
+url: /hstatus
+aliases:
+  - /hstat
+  - /projects/hstatus
 ---
 
 ### 1. Description

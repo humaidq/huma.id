@@ -11,6 +11,9 @@ LatestVersion: v0.1
 HasBuilds: true
 Description: "An instant ecommerce website generator based on a spreadsheet file."
 Usability: 3
+url: /shopsheet
+aliases:
+  - /projects/shopsheet
 ---
 
 ### 1. Description

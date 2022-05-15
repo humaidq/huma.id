@@ -12,9 +12,13 @@ HasBuilds: true
 Screenshot: "WhatsMorse.gif"
 Description: "A morse code web messaging application written in a two-hour hackaton."
 Usability: 4
+url: /morse
+aliases:
+  - /whatsmorse
+  - /projects/whatsmorse
 ---
 ### 1. Description
-![Screenshot of WhatsMorse page](../screenshots/WhatsMorse.gif)
+![Screenshot of WhatsMorse page](/projects/screenshots/WhatsMorse.gif)
 
 WhatsMorse is a web messaging application which translates all your messages to morse code written in a two hour ["Stupid" Hackathon by Transcend](https://www.meetup.com/transcenddubai/events/245505285/) in January of 2018.
 The goal of the hackathon was to create something useless (can be anything, not limited to computer software).  

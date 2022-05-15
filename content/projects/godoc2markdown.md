@@ -12,6 +12,9 @@ MailingList: general
 IssueTracker: true
 Description: "A program which converts Go Doc output to Markdown."
 Usability: 3
+url: /godoc2markdown
+aliases:
+  - /projects/godoc2markdown
 ---
 
 ### 1. Description

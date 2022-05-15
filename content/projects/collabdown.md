@@ -8,6 +8,9 @@ language: JavaScript
 license: BSD-2-Clause
 Description: "Browser extension which allows downloading and speeding up Bb Collaborate recordings."
 Usability: 4
+url: /collabdown
+aliases:
+  - "/projects/collabdown"
 ---
 
 ### 1. Description

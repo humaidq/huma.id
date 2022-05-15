@@ -9,6 +9,9 @@ license: BSD-2-Clause
 site: https://areweherdimmuneyet.huma.id
 Description: "A herd-immunity tracker for the COVID-19 vaccine race in the UAE."
 Usability: 4
+url: /herd
+aliases:
+  - "/projects/awhiy"
 ---
 
 ### 1. Description

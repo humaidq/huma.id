@@ -8,8 +8,9 @@ date: 2021-04-01
 description: "My BSc Computer Science dissertation project. A system that
 allows users to create a custom secure Linux distribution using a web app."
 site: https://huma.id/diss.pdf
+url: /diss
 aliases:
-  - /diss
+  - "/projects/dissertation"
 ---
 
 ### Overview

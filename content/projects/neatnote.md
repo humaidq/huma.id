@@ -12,6 +12,9 @@ IssueTracker: true
 Description: "A Lobsters-like web app for university students to post notes and question."
 LatestVersion: v0.3.3
 Usability: 4
+url: /neatnote
+aliases:
+  - /projects/neatnote
 ---
 ### 1. Description
 

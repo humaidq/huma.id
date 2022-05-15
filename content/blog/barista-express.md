@@ -1,6 +1,9 @@
 ---
 title: "Breville the Barista Express: After four years"
 date: 2020-07-24
+aliases:
+  - /blog/barista-express/
+url: "/barista"
 ---
 
 ![A picture of the Barista Express, with a knock box on the right](machine.jpeg)

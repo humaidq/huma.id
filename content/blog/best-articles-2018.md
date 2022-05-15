@@ -1,6 +1,9 @@
 ---
 title: "Best articles I read in 2018"
 date: 2019-01-08
+url: /best-2018
+aliases:
+  - "/blog/best-articles-2018"
 ---
 
 I have read many great articles related to programming and Computer

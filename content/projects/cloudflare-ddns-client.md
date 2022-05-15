@@ -10,6 +10,9 @@ GoDoc: false
 IssueTracker: false
 Description: "A simple Cloudflare Dynamic DNS Client."
 Usability: 4
+url: /ddns
+aliases:
+  - "/projects/cloudflare-ddns-client"
 ---
 
 ### 1. Description

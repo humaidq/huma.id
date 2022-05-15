@@ -1,6 +1,9 @@
 ---
 title: "Detecting the Empty Character in Go"
 date: 2020-07-29
+url: /emptychar
+aliases:
+  - "/blog/empty-char-go"
 ---
 
 I have recently been working on an online ticketing system. I have been using

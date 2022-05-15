@@ -11,10 +11,13 @@ HasBuilds: true
 Screenshot: "4DG.gif"
 Description: "A 4D movie scripting program which runs on a Raspberry Pi using GPIO."
 Usability: 1
+url: /4dg
+aliases:
+  - "/projects/4dg"
 ---
 
 ### 1. Purpose
-![A picture of 4DG control panel](../screenshots/4DG.gif)
+![A picture of 4DG control panel](/projects/screenshots/4DG.gif)
 
 The goal of this program is to allow anyone to create a 4D movie script. When run on a Raspberry Pi, the program will allow you to control Raspberry Pi's GPIO pins.  
 

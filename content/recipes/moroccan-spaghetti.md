@@ -1,6 +1,9 @@
 ---
 title: Moroccan-style Spaghetti Bolognese
 date: 2021-01-17
+url: /spaghetti
+aliases:
+  - /recipes/moroccan-spaghetti
 ---
 
 This is a recipe I learned from [Abdelrahman](https://elkabbany.xyz). I was a

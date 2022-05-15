@@ -8,6 +8,9 @@ date: 2016-05-31
 NotAccepting: true
 Description: "Archive repository of my Sponge plugins."
 Usability: 4
+url: /sponge-plugins
+aliases:
+  - /projects/spongepluginsarchive
 ---
 This is an archive repository to my three old Sponge plugins, which I am sure no longer works in the current version of Sponge server.
 

@@ -1,9 +1,9 @@
 ---
 title: "Accessing my Laptop Anywhere on iOS through Tailscale"
 date: 2022-05-06
+url: "/tailscale"
 aliases:
   - "/blog/tailscale-ios"
-url: "/tailscale-ios"
 ---
 
 For a really long time, I wanted to access my files anywhere, and unfortunately

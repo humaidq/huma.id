@@ -8,6 +8,10 @@ date: 2015-02-10
 NotAccepting: true
 Description: "A library of classes which allows you to create questions easily for Console Applications."
 Usability: 4
+url: /question
+aliases:
+  - /questions
+  - /projects/questions
 ---
 
 ### 1. Description

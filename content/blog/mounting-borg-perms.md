@@ -1,6 +1,9 @@
 ---
 title: "Resolving Permission Errors with Borg Mounts"
 date: 2020-08-16
+url: /borg-perms
+aliases:
+  - "/blog/mounting-borg-perms"
 ---
 
 I use [Borg] to compress, encrypt, and deduplicate my backups, and it has been

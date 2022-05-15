@@ -1,6 +1,9 @@
 ---
 title: "Setting up a Yubikey on Void Linux"
 date: 2020-06-16
+url: /yubi
+aliases:
+  - "/blog/yubi"
 ---
 
 I recently got a [Yubikey], which is a hardware authentication device. It has
@@ -32,7 +35,7 @@ Now you need to install Yubikey packages:
 After restarting your system, you can then plug in your key, and run
 the `ykpers-gui` utility (or `ykpers` if you prefer a command-line interface).
 
-<img src="ykpers-gui.png" href="A screenshot of the ykpers-gui utility on the
+<img src="/blog/yubi/ykpers-gui.png" href="A screenshot of the ykpers-gui utility on the
 About page" width="480" />
 
 ### Further configuration

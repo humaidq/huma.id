@@ -1,6 +1,9 @@
 ---
 title: My new website & blog
 date: 2018-07-23
+url: /welcome
+aliases:
+  - "/blog/welcome"
 ---
 Welcome to my newly designed website, which includes a Git projects page, a blog, a gallery and my contact information.
 The website used to run on a web server which I wrote using the Go programming language, and had a login page with GitHub

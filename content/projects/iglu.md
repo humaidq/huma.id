@@ -5,8 +5,10 @@ date: 2020-04-23
 site: https://nacdlow.com
 Description: "A smart home system of the future (group project)."
 Usability: 4
+url: /iglü
 aliases:
   - /iglu
+  - /projects/iglu
   - /igloo
   - /iglo
 ---

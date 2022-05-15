@@ -12,6 +12,9 @@ HasBuilds: true
 Screenshot: "yabfig.jpg"
 Description: "A simple BF interpreter, debugger and linter written in Go."
 Usability: 4
+url: /yabfig
+aliases:
+  - /projects/yabfig
 ---
 
 ### 1. Description

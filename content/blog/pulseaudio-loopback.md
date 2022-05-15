@@ -1,6 +1,9 @@
 ---
 title: "How to Loopback Application Sound as an Input Source with PulseAudio"
 date: 2021-05-03
+url: /pa-loopback
+aliases:
+  - "/blog/pulseaudio-loopback"
 ---
 
 This guide will show you how to loopback your computer's application sound as a

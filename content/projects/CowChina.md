@@ -10,6 +10,9 @@ GoDoc: true
 HasBuilds: true
 Description: "CowChina is a logger for a variant of Spades called Hokm. It detects invalid moves (cheating) and winners."
 Usability: 2
+url: /cowchina
+aliases:
+  - "/projects/cowchina"
 ---
 
 ### 1. Description

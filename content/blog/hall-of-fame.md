@@ -5,6 +5,9 @@ Summary: "This is a list of software which improved the way I used my computer,
 the list includes software for backing up, text editing and document
 processing, Linux/Unix utilities and programs, and desktop environment and
 applications."
+url: /hall-of-fame
+aliases:
+  - "/blog/hall-of-fame"
 ---
 
 This is a list of software which improved the way I use my computer.

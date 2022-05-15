@@ -5,13 +5,16 @@ date: 2017-12-06
 site: https://play.google.com/store/apps/details?id=appinventor.ai_humaid_andr.XMath&hl=en_US
 Description: "A tiny learning management system for Android."
 Usability: 3
+url: /xmath
+aliases:
+  - /projects/xmath
 ---
 
 This is a coursework project for the Interactive System (F27IS) course at Heriot-Watt
 University. This Android application is made using MIT App Inventor 2, and below
 is the description of the application as published on the Google Play Store.  
 
-Download the App Inventor file: [`XMath.aia`](XMath.aia) *(160K)*
+Download the App Inventor file: [`XMath.aia`](/projects/xmath/XMath.aia) *(160K)*
 
 ----------
 

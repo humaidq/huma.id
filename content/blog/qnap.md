@@ -1,6 +1,9 @@
 ---
 title: "Installing FreeNAS on my QNAP TS-459"
 date: 2020-06-15
+url: /qnap
+aliases:
+  - "/blog/qnap"
 ---
 
 <img src="qnap.jpg" alt="A picture of the QNAP on a wooden desk" width="480" />

@@ -8,6 +8,9 @@ Language: Bash
 date: 2018-06-22
 Description: "A secure and minimal Linux distribution."
 Usability: 2
+url: /sifros
+aliases:
+  - /projects/sifros
 ---
 
 ### 1. Purpose

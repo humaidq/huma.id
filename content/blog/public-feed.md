@@ -1,6 +1,9 @@
 ---
 title: "My Public News Feed"
 date: 2020-07-12
+url: /public-feed
+aliases:
+  - "/blog/public-feed"
 ---
 
 For the past months, I used [openring] to generate the webring section you see
