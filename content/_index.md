@@ -9,7 +9,7 @@ aliases:
 Welcome to my personal website. You can find my open-source projects, blog, and
 other works on this website.
 
-I like writing software that solves problems. My [projects](/project/)
+I like writing software that solves problems. My [projects](/projects/)
 are written in various programming languages, and I am always
 improving my skills by learning new methodologies, and also improve my
 understanding of computer security.
