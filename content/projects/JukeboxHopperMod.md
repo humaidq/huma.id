@@ -9,6 +9,7 @@ date: 2022-05-15
 Screenshot: "JukeboxHopperMod.gif"
 Description: "A simple Minecraft mod which allows you to use hoppers to insert records into jukeboxes."
 Usability: 4
+site: https://modrinth.com/mod/jukeboxhopper
 url: "/jb"
 aliases:
   - "/projects/jukeboxhoppermod"
@@ -23,6 +24,7 @@ a hopper to insert a record into a Jukebox.
 ### 2. Download and usage
 
 Place the mod jar file into the `mods` folder.
+You can download the mod from [Modrinth](https://modrinth.com/mod/jukeboxhopper).
 
 
 ### 3. Building

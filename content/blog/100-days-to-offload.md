@@ -3,7 +3,7 @@ title: "100 Posts to Offload"
 date: 2020-06-14
 url: /100days
 alias:
-  - /blog/100-days-to-offload
+  - "/blog/100-days-to-offload"
 ---
 
 In the past couple of months, many bloggers started to take part in the

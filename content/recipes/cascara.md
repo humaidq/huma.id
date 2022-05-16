@@ -3,6 +3,7 @@ title: Cascara Tea
 url: /cascara
 aliases:
   - /recipes/cascara
+  - /tea
 ---
 
 This is one of the most refreshing drinks I have ever tried. It is made
