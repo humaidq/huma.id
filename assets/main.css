@@ -8,9 +8,23 @@ body {
   font-family: "Inter", "San Fransisco", -apple-system, "BlinkMacSystemFont", "Source Sans Pro", "Roboto", sans-serif;
   font-size: 14pt;
   line-height: 1.4;
-  background-color: #fff; /* for dillo */
+  background-color: #edeee6; /* for dillo */
   max-width: 980px;
   margin: 0 auto;
+}
+
+main {
+  background-color: #fefefe;
+}
+
+.nav {
+    background-color: #134dae;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.nav, .nav a {
+  color: #fefefe;
 }
 
 section {
@@ -81,7 +95,12 @@ main {
 footer {
   padding: 1rem;
   text-align: center;
-  color: #2f2f2f;
+  background-color: #000;
+  color: #cccccc;
+}
+
+footer a {
+    color: #eeeeee;
 }
 
 a:focus {
