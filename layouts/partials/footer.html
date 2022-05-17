@@ -1,5 +1,9 @@
 </main>
 <footer>
+  {{if $.GitInfo}}<p>Current page revision: {{dateFormat "Jan 2, 2006" $.GitInfo.AuthorDate}}
+    (<a target="sitesource"
+       href="https://git.sr.ht/~humaid/humaidq.ae/commit/{{$.GitInfo.Hash}}#content/{{$.File.Path}}">{{ $.GitInfo.AbbreviatedHash }}</a>)
+  </p>{{end}}
   <p>The content of this site is CC BY-SA 4.0. The code of this site
     is BSD 2-Clause.
      <a target="sitesource" href="https://git.sr.ht/~humaid/humaidq.ae/tree/master/LICENSE">View license file</a></p>

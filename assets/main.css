@@ -18,10 +18,27 @@ main {
 }
 
 .nav {
-    background-color: #134dae;
-    margin: 0;
-    padding: 5px 0;
+  background-color: #134dae;
+  margin: 0;
+  padding: 8px 0;
 }
+
+
+.nav a {
+  margin: 0;
+  padding: 8px 0;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav a:focus {
+  color: #000;
+  background-color: #ffbf47;
+}
+
 
 .nav, .nav a {
   color: #fefefe;
@@ -101,6 +118,10 @@ footer {
 
 footer a {
     color: #eeeeee;
+}
+
+footer p {
+  margin: 0 0 0 2px;
 }
 
 a:focus {

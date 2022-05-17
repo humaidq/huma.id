@@ -6,6 +6,7 @@ preserveTaxonomyNames = true
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 disableHugoGeneratorInject = true
+enableGitInfo = true
 [Params]
 	name = "Humaid AlQassimi"
 	images = ["img/me-2020.jpg"]
