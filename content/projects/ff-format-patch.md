@@ -6,6 +6,7 @@ MailingList: general
 License: "GPL-2.0-or-later"
 Language: C
 date: 2019-10-24
+LatestVersion: "v1"
 IssueTracker: true
 Description: "A patch for FF v2.3 to allow steps to be formatted for humans."
 Usability: 4
@@ -94,5 +95,5 @@ Linux x86_64 glibc systems.
 
 ### 7. Change log
 
-- v0.1 *(Oct 24 2019)*
+- v1 *(Oct 24 2019)*
   - Initial release

@@ -8,6 +8,7 @@ Language: Go
 date: 2020-06-10
 GoDoc: false
 IssueTracker: false
+LatestVersion: "v0.2.0"
 Description: "A simple Cloudflare Dynamic DNS Client."
 Usability: 4
 url: /ddns
@@ -41,3 +42,10 @@ You will have to [create an API token](https://dash.cloudflare.com/profile/api-t
 which has the permission to edit zone DNS (`Zone.DNS`).
 
 This program will check every minute unless interrupted.
+
+### 4. Changelog
+
+- v0.2.0 (Jan 20, 2021)
+  - IPv6 Support (added by [Jack Dallas](https://git.sr.ht/~dallas/))
+- v0.1.0 (Jun 17, 2020)
+  - Initial release

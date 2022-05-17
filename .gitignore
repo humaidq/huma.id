@@ -9,3 +9,4 @@ layouts/partials/webring-out.html
 Makefile
 feeds/
 static/sfeed.html
+*\~

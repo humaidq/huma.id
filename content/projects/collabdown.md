@@ -6,6 +6,7 @@ section: "Others"
 date: 2021-02-16
 language: JavaScript
 license: BSD-2-Clause
+LatestVersion: "v1.2.2"
 Description: "Browser extension which allows downloading and speeding up Bb Collaborate recordings."
 Usability: 4
 url: /collabdown
@@ -58,10 +59,10 @@ Which will build the artefact, which you may upload to the extensions store.
 
 ### 5. Changelog
 
-- v1.1 (Nov 13 2020)
-	- Initial release
+- v1.2.1 (Jan 17 2021)
+	- Fixes tool-tip placement for playback button
 - v1.2 (Jan 17 2021)
 	- Video pauses when download button is clicked
 	- Adds a playback speed toggle button
-- v1.2.1 (Jan 17 2021)
-	- Fixes tool-tip placement for playback button
+- v1.1 (Nov 13 2020)
+	- Initial release

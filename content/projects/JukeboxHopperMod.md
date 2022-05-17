@@ -9,6 +9,7 @@ date: 2022-05-15
 Screenshot: "JukeboxHopperMod.gif"
 Description: "A simple Minecraft mod which allows you to use hoppers to insert records into jukeboxes."
 Usability: 4
+LatestVersion: "v2.0.0"
 site: https://modrinth.com/mod/jukeboxhopper
 url: "/jb"
 aliases:
@@ -44,3 +45,7 @@ run Minecraft with the mod pre-loaded.
 - v1 (Dec 17, 2018)
   - Initial release. Works with Minecraft 1.12, requires MCP and
     manually creating the mod.
+
+### 5. To-Do
+
+- [ ] Allow extracting music discs from jukeboxes.
