@@ -13,7 +13,7 @@ This gave me freedom to install any distribution without worrying much about
 driver support. I switched away from the laptop, for reasons I explained on my
 [blog post about the System76 Kudu](/blog/kudu-two-year/).
 
-![A picture of the ThinkPad T590](laptop.jpeg)
+![A picture of the ThinkPad T590](/blog/thinkpad-t590/laptop.jpeg)
 
 ThinkPads are known for their reliability, many Linux enthusiasts and
 businesses rely on ThinkPads due to the Linux support and durability of the

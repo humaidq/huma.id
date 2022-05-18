@@ -59,9 +59,9 @@ Run with `go run main.go`.
 
 ### 7. To-do
 
-- [ ] Deploy to Heroku
-- [ ] Use [X]ORM
-- [ ] Template changes/fixes
-  - [ ] Clear cart when changing sites
-  - [ ] Allow custom templates
-  - [ ] Show add to cart confirmation
+- Deploy to Heroku
+- Use XORM
+- Template changes/fixes
+  - Clear cart when changing sites
+  - Allow custom templates
+  - Show add to cart confirmation

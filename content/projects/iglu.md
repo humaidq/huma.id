@@ -110,7 +110,7 @@ Each project has a its own description, each project will be listed below.
 
 ![Screenshot of iglü's dashboard, showing a greeting, the outside temperature,
 the solar battery status, the energy consumption and usage chart, favourite
-shortcuts, and energy tips](iglu.png)
+shortcuts, and energy tips](/projects/iglu/iglu.png)
 
 This is the core of the smart home system. This project contains most of the
 work done on the project. It is a self-contained project which includes:
@@ -168,7 +168,7 @@ automatically on an SQLite database file.
 #### 2.2. iglüOS
 
 ![a screenshot of the boot messages, with the snippet in the middle stating
-Welcome to igluOS (snowball)](igluOS.jpeg)
+Welcome to igluOS (snowball)](/projects/iglu/igluOS.jpeg)
 
 iglüOS is our custom Raspbian Lite-based distribution built for Nacdlow's iglü.
 It allows you to have an OS image for the Raspberry Pi with iglü installed as a
@@ -205,7 +205,7 @@ Raspberry Pi fully configured and working.
 
 #### 2.3. godoc2markdown
 
-![a screenshot of the generated documentation](godoc.jpg)
+![a screenshot of the generated documentation](/projects/iglu/godoc.jpg)
 
 As we were working on private GitLab repositories, we weren't able to use
 [GoDoc](https://godoc.org) to generate documentation for our project.
@@ -223,7 +223,7 @@ which you may check out and use.
 
 ![a screenshot of the dev dns server running, indicating that it will resolve
 local.nacdlow.com to 10.0.0.219, and other queries will be redirected to
-8.8.8.8](devdns.jpg)
+8.8.8.8](/projects/iglu/devdns.jpg)
 
 This is a custom Domain Name Server which returns a custom response for our
 domain, used for testing PWAs with HTTPS support (required by service workers).
@@ -236,7 +236,7 @@ It uses Miek Gieben's DNS library for both resolving and serving.
 #### 2.4. Plugin SDK
 
 ![a screenshot of a code snippet with an implementation of a test plugin,
-displaying the OnLoad and GetManifest functions stubbed](plugin-sdk.jpg)
+displaying the OnLoad and GetManifest functions stubbed](/projects/iglu/plugin-sdk.jpg)
 
 This is our Software Development Kit for developing iglü server plugins in Go.
 It is based on HashiCorp's [go-plugin] library, which they use in their products.
@@ -254,7 +254,7 @@ load the binary.
 ![a screenshot of the plugin packager, with a text input of the plugin
 directory to package, fields to display the plugin manifest, and tick boxes to
 select architectures to build for. At the bottom there is a field to input the
-repository directory, and a big "Package" button.](plugin-packager.jpg)
+repository directory, and a big "Package" button.](/projects/iglu/plugin-packager.jpg)
 
 This is our internal plugin package graphical program, which allows us to:
 
@@ -271,7 +271,7 @@ depending on the platform/architecture (just like Debian's APT).
 
 ![a screenshot of the marketplace, showing the scheduler as the featured
 plugin, priced at 1.99 pound sterling, there are options to view plugins by
-category, and a list of plugins](marketplace.png)
+category, and a list of plugins](/projects/iglu/marketplace.png)
 
 This is iglü marketplace website and plugin repository. It contains the
 descriptions of all plugins, and their compiled binaries. The website is also
@@ -289,7 +289,7 @@ Visit the marketplace: <https://market.nacdlow.com>
 
 ![a screenshot of the Stripe payment gateway, on the payment page for the
 Scheduler plugin, priced at 1.99 pound sterling, there are fields on the right
-for the card payment details](payment.jpg)
+for the card payment details](/projects/iglu/payment.jpg)
 
 Our Stripe testing payment gateway, which is built for our static Marketplace
 website. This is deployed on [Heroku] and uses Stripe's Go library.
@@ -304,7 +304,7 @@ may try `4242 4242 4242 4242` with any expiry/CVV number.
 ![a photograph of the iglü device, which is a 3D printed rounded box with an
 e-ink display, showing the URL of the system at local.nacdlow.com, the power
 generation as 40 kilowatts, the power consumption at 120 kilowatts, and the
-battery level at 57%](eink.jpg)
+battery level at 57%](/projects/iglu/eink.jpg)
 
 We wrote a program in Python which pulls in data from the smart home
 system and displays it on the e-ink display. We used FontAwesome icons and

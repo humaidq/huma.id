@@ -6,7 +6,7 @@ aliases:
   - "/blog/qnap"
 ---
 
-<img src="qnap.jpg" alt="A picture of the QNAP on a wooden desk" width="480" />
+<img src="/blog/qnap/qnap.jpg" alt="A picture of the QNAP on a wooden desk" width="480" />
 
 About four years ago I got the QNAP TS-459 as a network-attached storage (NAS)
 so I can store family pictures and backups of our devices. It came with QNAP
@@ -41,13 +41,13 @@ installation went smoothly and it booted to the FreeNAS selection menu.
 After plugging in the Ethernet, I visited the NAS IP address, lo and behold, we
 are greeted by a FreeNAS login page.
 
-![A screenshot of the FreeNAS login form on a browser](login.png)
+![A screenshot of the FreeNAS login form on a browser](/blog/qnap/login.png)
 
 And the dashboard...
 
 ![A screenshot of the FreeNAS dashboard, displaying the system information, the
 system load, memory available (which is 4 gigabytes), and the connected
-Ethernet interface](dashboard.png)
+Ethernet interface](/blog/qnap/dashboard.png)
 
 Since FreeNAS has no issues detecting the drives, the next step is going to be
 purchasing new drives to use with this setup.

@@ -35,7 +35,7 @@ features of the platform.
 
 #### 1.1. The dashboard
 
-![a screenshot of the dashboard](platform-dark.png)
+![a screenshot of the dashboard](/projects/platform/platform-dark.png)
 
 The dashboard has a configurable alert, and links & resources section. It also
 shows all the class representatives configured on the system.

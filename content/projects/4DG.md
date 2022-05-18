@@ -8,7 +8,7 @@ Language: Go
 date: 2018-05-16
 GoDoc: true
 HasBuilds: true
-Screenshot: "4DG.gif"
+Screenshot: "4DG.webp"
 Description: "A 4D movie scripting program which runs on a Raspberry Pi using GPIO."
 Usability: 1
 url: /4dg
@@ -17,7 +17,9 @@ aliases:
 ---
 
 ### 1. Purpose
-![A picture of 4DG control panel](/projects/screenshots/4DG.gif)
+![A picture of 4DG control panel](/projects/screenshots/4DG.webp)
+
+**Note:** Some work is needed to be done before this project is usable.
 
 The goal of this program is to allow anyone to create a 4D movie script. When run on a Raspberry Pi, the program will allow you to control Raspberry Pi's GPIO pins.  
 
@@ -56,7 +58,7 @@ $ _4dg run
 
 ### 6. To-Do
 
-- [ ] Unit testing
-- [ ] Finish player interface
-- [ ] Add different position format
+- Unit testing
+- Finish player interface
+- Add different position format
 

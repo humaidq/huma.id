@@ -8,7 +8,7 @@ body {
   font-family: "Inter", "San Fransisco", -apple-system, "BlinkMacSystemFont", "Source Sans Pro", "Roboto", sans-serif;
   font-size: 14pt;
   line-height: 1.4;
-  background-color: #edeee6; /* for dillo */
+  background: url("/bg.webp") repeat scroll 0% 0%, #edeee6 none repeat scroll 0% 0%;
   max-width: 980px;
   margin: 0 auto;
 }
@@ -17,12 +17,15 @@ main {
   background-color: #fefefe;
 }
 
+a {
+  color: #134dae
+}
+
 .nav {
   background-color: #134dae;
   margin: 0;
   padding: 8px 0;
 }
-
 
 .nav a {
   margin: 0;
@@ -38,7 +41,6 @@ main {
   color: #000;
   background-color: #ffbf47;
 }
-
 
 .nav, .nav a {
   color: #fefefe;
@@ -102,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .meta p {
-  margin: 0 0 0 25px;
+  margin: 5px 0 0 25px;
 }
 
 main {
@@ -128,21 +130,10 @@ a:focus {
   outline: 2.5pt solid #ffbf47;
 }
 
-/* Images and Gallery */
+/* Images */
 img {
   max-width: 100%;
   height: auto;
-}
-
-.gal {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-
-.gal img {
-  max-width: 95%;
-  max-height: 220px;
 }
 
 /* Code blocks */
@@ -162,15 +153,6 @@ code {
 
 /* Responsiveness */
 @media only screen and (max-width: 780px) {
-  .gal {
-    grid-template-columns: none;
-  }
-  .gal img {
-    display: block;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
   body {
     font-size: 1.1em;
   }

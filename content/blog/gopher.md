@@ -12,7 +12,7 @@ alternatively, view the site with [Floodgap](https://gopher.floodgap.com/gopher/
 on a modern browser. This is how it looks with lynx:
 
 ![A screenshot of my Gopher page, showing the same description of my main
-HTTPS website, loaded on the lynx browser](gopher.png)
+HTTPS website, loaded on the lynx browser](/blog/gopher/gopher.png)
 
 In the future, I may extend it to be a closer copy of my current website, and
 to include the blog, projects, among other things.

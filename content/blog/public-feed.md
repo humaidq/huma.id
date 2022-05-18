@@ -20,7 +20,7 @@ Now sfeed is configured on this website's project and it is hosted on
 [/sfeed.html](/sfeed.html), so not only I could view my feed on any device, but
 I could share it with friends.
 
-![A screenshot of the sfeed page](sfeed.png)
+![A screenshot of the sfeed page](/blog/public-feed/sfeed.png)
 
 With [Tridactyl], I could use vim-like shortcuts on Firefox when loading the
 page, so that is convenient.

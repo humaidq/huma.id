@@ -1,5 +1,6 @@
 ---
 title: Recipes
+description: "Humaid's recipe book."
 ---
 
 Welcome to my recipe book. Here are some of the recipes I learned from someone,

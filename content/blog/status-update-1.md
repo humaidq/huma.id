@@ -53,7 +53,7 @@ to be released soon.
 
 ![A picture of a website, called Notes Overflow, with a list of University
 courses, below it a number of the posts. On the navigation menu there is a
-title of the website, and a login link.](notes-overflow-alpha.png)
+title of the website, and a login link.](/blog/status-update-1/notes-overflow-alpha.png)
 
 That's all for this month!
 

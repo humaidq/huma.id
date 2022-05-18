@@ -6,7 +6,7 @@ section: "Games"
 License: BSD-2-Clause
 Language: Java
 date: 2022-05-15
-Screenshot: "JukeboxHopperMod.gif"
+Screenshot: "JukeboxHopperMod.webp"
 Description: "A simple Minecraft mod which allows you to use hoppers to insert records into jukeboxes."
 Usability: 4
 LatestVersion: "v2.0.0"
@@ -17,7 +17,7 @@ aliases:
 ---
 
 ### 1. Description
-![Picture of mod in-game](/projects/screenshots/JukeboxHopperMod.gif)
+<img src="/projects/screenshots/JukeboxHopperMod.webp" alt="Picture of a hopper on top of a jukebox in Minecraft" width="600" height="400" />
 
 This is a simple Minecraft mod which allows players to use
 a hopper to insert a record into a Jukebox.  
@@ -48,4 +48,4 @@ run Minecraft with the mod pre-loaded.
 
 ### 5. To-Do
 
-- [ ] Allow extracting music discs from jukeboxes.
+- Allow extracting music discs from jukeboxes.
