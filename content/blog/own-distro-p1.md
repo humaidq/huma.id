@@ -139,7 +139,7 @@ it out by running our build script as root.
 ```
 
 ![Screenshot of the output of the shell script, showing Ubuntu as the output of
-lsb\_release](output.png)
+lsb\_release](/blog/own-distro-p1/output.png)
 
 As you see in the screenshot, we get a prompt. This is the Xubuntu 20.04
 environment which we can interact with and modify the system to our liking.
@@ -205,7 +205,7 @@ We can now try to build again, and try to boot it using `qemu`.
 $ qemu-system-x86_64 -m 2G -cdrom pinguOS-<date>.iso
 ```
 
-![Screenshot of the desktop with the hello.txt file open](desktop.png)
+![Screenshot of the desktop with the hello.txt file open](/blog/own-distro-p1/desktop.png)
 
 Violà!
 
