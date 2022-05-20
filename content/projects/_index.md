@@ -6,4 +6,5 @@ aliases:
   - /p
 ---
 
-These are some of the projects I have worked on...
+Here is a list of (mostly) open-source projects that I have worked on. Each
+project has descriptions and usage information.
