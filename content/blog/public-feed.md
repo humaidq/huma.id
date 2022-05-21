@@ -2,6 +2,8 @@
 title: "My Public News Feed"
 date: 2020-07-12
 url: /public-feed
+image: /blog/public-feed/sfeed.png
+imagealt: "A screenshot of the sfeed page, showing a list of blog posts from different blogs that I follow"
 aliases:
   - "/blog/public-feed"
 ---
@@ -17,10 +19,10 @@ Club](https://lists.sr.ht/~sircmpwn/free-writers-club/%3C20191215210525.GA40863%
 but I lost my configuration (or had misplaced it).
 
 Now sfeed is configured on this website's project and it is hosted on
-[/sfeed.html](/sfeed.html), so not only I could view my feed on any device, but
-I could share it with friends.
+[/sfeed.html](/sfeed.html), so not only I could view my feed on any device,
+but I could share it with friends.
 
-![A screenshot of the sfeed page](/blog/public-feed/sfeed.png)
+{{< image >}}
 
 With [Tridactyl], I could use vim-like shortcuts on Firefox when loading the
 page, so that is convenient.
@@ -33,4 +35,4 @@ challenge.*
 [openring]: https://git.sr.ht/~sircmpwn/openring
 [Tridactyl]: https://github.com/tridactyl/tridactyl
 [sfeed]: https://codemadness.org/git/sfeed/file/README.html
-[sfeedrc]: https://git.sr.ht/~humaid/humaidq.ae/tree/master/sfeedrc
+[sfeedrc]: https://git.sr.ht/~humaid/humaidq.ae/tree/94bb33b8bbdcc52e156b9e995516e95aedc138b7/sfeedrc

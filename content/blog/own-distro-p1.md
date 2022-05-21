@@ -2,6 +2,8 @@
 title: "Creating an Ubuntu-based distribution"
 date: 2020-05-01
 url: /own-distro
+image: /blog/own-distro-p1/desktop.png
+imagealt: "Screenshot of our custom distribution desktop with the hello.txt file open"
 aliases:
   - "/blog/own-distro-p1"
   - "/own-distro-p1"
@@ -203,9 +205,11 @@ We can now try to build again, and try to boot it using `qemu`.
 # sh ./build.sh
 ...
 $ qemu-system-x86_64 -m 2G -cdrom pinguOS-<date>.iso
-```
+```  
 
-![Screenshot of the desktop with the hello.txt file open](/blog/own-distro-p1/desktop.png)
+<br>
+
+{{< image >}}
 
 Violà!
 

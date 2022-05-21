@@ -2,11 +2,14 @@
 title: "Installing FreeNAS on my QNAP TS-459"
 date: 2020-06-15
 url: /qnap
+image: /blog/qnap/qnap.jpg
+imagealt: "A picture of a white desk-top NAS (QNAP TS-459) on top of a wooden desk"
+imagewidth: 480
 aliases:
   - "/blog/qnap"
 ---
 
-<img src="/blog/qnap/qnap.jpg" alt="A picture of the QNAP on a wooden desk" width="480" />
+{{< image >}}
 
 About four years ago I got the QNAP TS-459 as a network-attached storage (NAS)
 so I can store family pictures and backups of our devices. It came with QNAP

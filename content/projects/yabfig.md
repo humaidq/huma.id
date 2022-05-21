@@ -9,8 +9,9 @@ date: 2019-03-08
 GoDoc: true
 LatestVersion: v0.3
 HasBuilds: true
-Screenshot: "yabfig.jpg"
 Description: "A simple BF interpreter, debugger and linter written in Go."
+Image: /projects/screenshots/yabfig.webp
+ImageAlt: "An example of yabfig running a rot13 program"
 Usability: 4
 url: /yabfig
 aliases:
@@ -18,7 +19,8 @@ aliases:
 ---
 
 ### 1. Description
-![Screenshot](../screenshots/yabfig.jpg)
+
+{{< image >}}
 
 yabfig is a [BF](https://en.wikipedia.org/wiki/brainfuck) 
 interpreter written in Go. It has also been extended to lint

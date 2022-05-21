@@ -6,6 +6,8 @@ language: Go
 license: AGPL-3.0
 site: https://github.com/hw-cs-reps/platform
 Description: "A platform for posting announcements, tickets, and complaints for students"
+Image: /projects/platform/platform-dark.png
+ImageAlt: "A screenshot of the platform dashboard, showing announcements and tickets on the navigation bar, and the page contains links & resources, and also list of the class representatives."
 Usability: 4
 url: /platform
 aliases:
@@ -35,7 +37,7 @@ features of the platform.
 
 #### 1.1. The dashboard
 
-![a screenshot of the dashboard](/projects/platform/platform-dark.png)
+{{< image >}}
 
 The dashboard has a configurable alert, and links & resources section. It also
 shows all the class representatives configured on the system.
