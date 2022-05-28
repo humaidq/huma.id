@@ -24,4 +24,6 @@ feeds() {
 	feed "Hillel Wayne's blog" "https://www.hillelwayne.com/post/index.xml"
 	feed "EuAndreh's blog" "https://euandre.org/feed.articles.en.atom"
 	feed "Hutchie's blog" "https://hutchie.scot/blog/index.xml"
+	feed "Andreas Kling's blog" "https://awesomekling.github.io/feed.xml"
+	feed "rachelbythebay's writing"  "https://rachelbythebay.com/w/atom.xml"
 }
