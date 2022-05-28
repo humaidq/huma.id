@@ -9,8 +9,8 @@ aliases:
 ---
 
 A Gopher version of my website is available! You can access it by visiting
-<gopher://humaidq.ae> with a browser that supports it, such as [lynx]. Or 
-alternatively, view the site with [Floodgap](https://gopher.floodgap.com/gopher/gw?humaidq.ae)
+<gopher://huma.id> with a browser that supports it, such as [lynx]. Or 
+alternatively, view the site with [Floodgap](https://gopher.floodgap.com/gopher/gw?huma.id)
 on a modern browser. This is how it looks with lynx:
 
 {{< image >}}
