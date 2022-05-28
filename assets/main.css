@@ -5,11 +5,11 @@ html {
 }
 
 body {
-  font-family: "Inter", "San Fransisco", -apple-system, "BlinkMacSystemFont", "Source Sans Pro", "Roboto", sans-serif;
-  font-size: 14pt;
-  line-height: 1.4;
+  font-family: "Inter", -apple-system, "BlinkMacSystemFont", "Source Sans Pro", "Roboto", sans-serif;
+  font-size: 1.15em;
+  line-height: 1.4em;
   background: url("/bg.webp") repeat scroll 0% 0%, #edeee6 none repeat scroll 0% 0%;
-  max-width: 980px;
+  max-width: 55em;
   margin: 0 auto;
 }
 
@@ -24,12 +24,12 @@ a {
 .nav {
   background-color: #134dae;
   margin: 0;
-  padding: 8px 0;
+  padding: 0.5em 0;
 }
 
 .nav a {
   margin: 0;
-  padding: 8px 0;
+  padding: 0.5em 0;
   text-decoration: none;
 }
 
@@ -70,15 +70,15 @@ section {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-  margin: 10px 0;
+  margin: 0.5em 0;
   line-height: 1;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   text-align: center;
-  margin: 15px 0;
-  padding: 0 30px;
+  margin: 0.6em 0;
+  padding: 0 2em;
 }
 
 .c {
@@ -104,11 +104,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .meta p {
-  margin: 5px 0 0 25px;
+  margin: 0.3em 0 0 1.4em;
 }
 
 main {
-  padding: 20px 30px;
+  padding: 1.1em 2em;
 }
 
 footer {
@@ -123,11 +123,11 @@ footer a {
 }
 
 footer p {
-  margin: 0 0 0 2px;
+  margin: 0 0 0 0.2em;
 }
 
 a:focus {
-  outline: 2.5pt solid #ffbf47;
+  outline: 0.2rem solid #ffbf47;
 }
 
 /* Images */
@@ -138,13 +138,11 @@ img {
 
 /* Code blocks */
 pre {
-  font-family: "SFMono-Regular","Menlo","Consolas","Liberation Mono","Courier New",monospace;
+  font-family: "SFMono-Regular","Source Code Pro","Consolas","Liberation Mono",monospace;
   background-color: #130e24;
-  color: #e5e5e5;
   padding: 0.25rem 1rem;
   margin: 0 -1rem;
   overflow-x: auto;
-  font-size: 11pt;
   border-radius: 3px;
 }
 
@@ -152,11 +150,12 @@ code {
   background-color: #130e24;
   color: #e5e5e5;
   border-radius: 3px;
-  font-size: 12pt;
+  font-size: 1rem;
+  padding: 0.2em;
 }
 
 /* Responsiveness */
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 48rem) {
   body {
     font-size: 1.1em;
   }
@@ -175,7 +174,7 @@ code {
   }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 60rem) {
   article {
     padding: 0 10%;
   }
