@@ -2,6 +2,8 @@
 title: "System76 Kudu4: After two years"
 date: 2019-11-16
 url: /kudu
+image: /blog/kudu-two-year/artifacts.jpg
+imagealt: "A picture of my laptop screen, showing random horizontal artifacts across different sections of the screen, with different colours"
 aliases:
   - "/blog/kudu-two-year"
 ---
@@ -27,8 +29,7 @@ close the lid and open it again. At first I thought it was an issue with my
 system, but it soon started to get worse. Random artifacts started to appear on
 the screen as I used it, and it started to occur more often over time.
 
-![A picture of my laptop screen, showing random horizontal artifacts across
-different sections of the screen, with different colours](artifacts.jpg)
+{{< image >}}
 
 This would get worse as I use my laptop often as I go to my different lectures,
 opening and closing my laptop lid while I take my laptop out of my backpack.
@@ -45,7 +46,7 @@ up. The cable eventually arrived, and I got it replaced. But getting the cable
 to go through the hinges was one of the most difficult thing I have done (maybe
 I'm doing it wrong?). Here's a picture of the old cable:
 
-![A picture of the old LCD cable, which looks slightly crooked](old-cable.jpg)  
+![A picture of the old LCD cable, which looks slightly crooked](/blog/kudu-two-year/old-cable.jpg)  
 
 ----
 

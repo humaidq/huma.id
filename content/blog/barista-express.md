@@ -1,12 +1,14 @@
 ---
 title: "Breville the Barista Express: After four years"
 date: 2020-07-24
+image: /blog/barista-express/machine.jpeg
+imagealt: "A picture of the Barista Express, with a knock box on the right"
 aliases:
   - /blog/barista-express/
 url: "/barista"
 ---
 
-![A picture of the Barista Express, with a knock box on the right](/blog/barista-express/machine.jpeg)
+{{< image >}}
 
 The Barista Express by Breville is my first (and current) espresso machine. It
 is wonderful as it has a built-in grinder, and includes most of the tools and

@@ -4,6 +4,8 @@ section: "Others"
 date: 2020-04-23
 site: https://nacdlow.com
 Description: "A smart home system of the future (group project)."
+Image: /projects/iglu/eink.jpg
+Imagealt: "a photograph of the iglü device, which is a 3D printed rounded box with an e-ink display, showing the URL of the system at local.nacdlow.com, the power generation as 40 kilowatts, the power consumption at 120 kilowatts, and the battery level at 57%"
 Usability: 4
 url: /iglü
 aliases:
@@ -301,10 +303,7 @@ may try `4242 4242 4242 4242` with any expiry/CVV number.
 
 #### 2.8. E-Ink Display
 
-![a photograph of the iglü device, which is a 3D printed rounded box with an
-e-ink display, showing the URL of the system at local.nacdlow.com, the power
-generation as 40 kilowatts, the power consumption at 120 kilowatts, and the
-battery level at 57%](/projects/iglu/eink.jpg)
+{{< image >}}
 
 We wrote a program in Python which pulls in data from the smart home
 system and displays it on the e-ink display. We used FontAwesome icons and

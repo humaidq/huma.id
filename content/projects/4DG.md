@@ -8,8 +8,9 @@ Language: Go
 date: 2018-05-16
 GoDoc: true
 HasBuilds: true
-Screenshot: "4DG.webp"
 Description: "A 4D movie scripting program which runs on a Raspberry Pi using GPIO."
+Image: /projects/screenshots/4DG.webp
+ImageAlt: "A screenshot of 4DG control panel"
 Usability: 1
 url: /4dg
 aliases:
@@ -17,7 +18,8 @@ aliases:
 ---
 
 ### 1. Purpose
-![A picture of 4DG control panel](/projects/screenshots/4DG.webp)
+
+{{< image >}}
 
 **Note:** Some work is needed to be done before this project is usable.
 

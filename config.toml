@@ -9,7 +9,8 @@ disableHugoGeneratorInject = true
 enableGitInfo = true
 [Params]
 	name = "Humaid AlQassimi"
-	images = ["img/me-2020.jpg"]
+	image = "avatar.webp"
+	imagealt = "A picture of Humaid smiling, not while looking at the camera. Possibly in a discussion with people off-screen."
 [minify]
 	minifyOutput = true
 

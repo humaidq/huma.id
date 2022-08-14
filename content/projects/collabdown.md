@@ -8,6 +8,8 @@ language: JavaScript
 license: BSD-2-Clause
 LatestVersion: "v1.2.2"
 Description: "Browser extension which allows downloading and speeding up Bb Collaborate recordings."
+Image: /projects/screenshots/collabdown.png
+ImageAlt: "A screenshot of the side panel opened on Bb Collaborate's website, with the download recording list shown as added by CollabDown addon."
 Usability: 4
 url: /collabdown
 aliases:
@@ -15,6 +17,8 @@ aliases:
 ---
 
 ### 1. Description
+
+{{< image >}}
 
 CollabDown allows users to download recordings from Bb Collaborate (Ultra) by
 adding a Download Recording item on the side menu.

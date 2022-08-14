@@ -1,3 +1,3 @@
-# robots.txt for https://humaidq.ae
-Sitemap: https://humaidq.ae/sitemap.xml
+# robots.txt for https://huma.id
+Sitemap: https://huma.id/sitemap.xml
 

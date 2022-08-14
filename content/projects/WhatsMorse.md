@@ -9,8 +9,9 @@ date: 2018-01-06
 site: https://morse.hmksq.ae
 GoDoc: true
 HasBuilds: true
-Screenshot: "WhatsMorse.webp"
 Description: "A morse code web messaging application written in a two-hour hackaton."
+Image: /projects/screenshots/WhatsMorse.webp
+ImageAlt: "A screenshot of WhatsMorse page, showing a telegraph line ID and part of the transmittor form"
 Usability: 4
 url: /morse
 aliases:
@@ -18,7 +19,8 @@ aliases:
   - /projects/whatsmorse
 ---
 ### 1. Description
-![Screenshot of WhatsMorse page](/projects/screenshots/WhatsMorse.webp)
+
+{{< image >}}
 
 WhatsMorse is a web messaging application which translates all your messages to morse code written in a two hour ["Stupid" Hackathon by Transcend](https://www.meetup.com/transcenddubai/events/245505285/) in January of 2018.
 The goal of the hackathon was to create something useless (can be anything, not limited to computer software).  
