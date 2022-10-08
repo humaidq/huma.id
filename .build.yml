@@ -2,11 +2,13 @@ image: alpine/edge
 oauth: pages.sr.ht/PAGES:RW
 packages:
 - hut
+- hugo
 environment:
   site: huma.id
 tasks:
 - package: |
     cd $site
-    tar -cvz . > ../site.tar.gz
+    hugo
+    tar -cvz ./public/ > ../site.tar.gz
 - upload: |
     hut pages publish -d $site site.tar.gz
