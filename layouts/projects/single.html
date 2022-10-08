@@ -10,20 +10,19 @@
 <h2>{{ .Title }}</h2>
 <div class="meta">
   {{if .Params.GitURL}}<p>Clone with HTTPS: 
-  <a href="https://git.sr.ht/~humaid/{{ .Params.GitURL }}" rel="noreferrer" target="_blank">https://git.sr.ht/~humaid/{{ .Params.GitURL }}</a></p>{{end}}
+  <a href="https://git.sr.ht/~humaid/{{ .Params.GitURL }}" rel="noreferrer">https://git.sr.ht/~humaid/{{ .Params.GitURL }}</a></p>{{end}}
   {{if .Params.Language}}<p>Written in {{.Params.Language}}{{if .Params.License}}, licensed under
-  the <a href="https://spdx.org/licenses/{{.Params.License}}.html" target="_blank" rel="noreferrer noopener">{{.Params.License}}</a> license{{end}}{{end}}
+  the <a href="https://spdx.org/licenses/{{.Params.License}}.html" rel="noreferrer noopener">{{.Params.License}}</a> license{{end}}{{end}}
   {{if .Params.NotAccepting }}<p><b>Notice:</b> This project is not accepting any contributions.</p>{{end}}
-  {{if .Params.Site }}<p>Project URL: <a href="{{.Params.Site}}" rel="noreferrer" target="_blank">{{.Params.Site}}</a></p>{{end}}
+  {{if .Params.Site }}<p>Project URL: <a href="{{.Params.Site}}" rel="noreferrer">{{.Params.Site}}</a></p>{{end}}
   {{if .Params.Proprietary}}<p><b>Notice:</b> The source of this project is not publicly available.</p>{{end}}
-  {{if .Params.MailingList}}<p>Mailing list: <a href="mailto:~humaid/{{.Params.MailingList}}@lists.sr.ht" target="_blank">~humaid/{{.Params.MailingList}}@lists.sr.ht</a> 
-  (<a href="mailto:~humaid/{{.Params.MailingList}}+subscribe@lists.sr.ht?subject=subscribe&body=subscribe%20me">subscribe</a>, <a href="https://lists.sr.ht/~humaid/{{.Params.MailingList}}" rel="noreferrer" target="_blank">archive</a>)</p>{{end}}
+  {{if .Params.MailingList}}<p>Mailing list: <a href="mailto:~humaid/{{.Params.MailingList}}@lists.sr.ht">~humaid/{{.Params.MailingList}}@lists.sr.ht</a> 
+  (<a href="mailto:~humaid/{{.Params.MailingList}}+subscribe@lists.sr.ht?subject=subscribe&body=subscribe%20me">subscribe</a>, <a href="https://lists.sr.ht/~humaid/{{.Params.MailingList}}" rel="noreferrer">archive</a>)</p>{{end}}
   {{if .Params.IssueTracker }}<p>Issue tracker: <a href="https://todo.sr.ht/~humaid/{{.Params.GitURL}}">view tickets</a> (<a href="mailto:~humaid/{{.Params.GitURL}}@todo.sr.ht">submit ticket via email</a>)</p>{{end}}
-  <p>{{if .Params.GoDoc }}<a href="https://pkg.go.dev/git.sr.ht/~humaid/{{.Params.GitURL }}{{if .Params.LatestVersion}}@{{ .Params.LatestVersion}}{{end}}?tab=doc"
-	  target="_blank">
+  <p>{{if .Params.GoDoc }}<a href="https://pkg.go.dev/git.sr.ht/~humaid/{{.Params.GitURL }}{{if .Params.LatestVersion}}@{{ .Params.LatestVersion}}{{end}}?tab=doc">
   <img src="/pkg.go.dev-reference-blue.svg"
   alt="pkg.go.dev reference"/></a>{{end}}
-  {{if .Params.HasBuilds}}<a href="https://builds.sr.ht/~humaid/{{.Params.GitURL}}?" rel="noreferrer" target="_blank"><img src="https://buildstatusproxy.huma.id/~humaid/{{.Params.GitURL}}.svg" alt="builds.sr.ht status" /></a>{{end}}
+  {{if .Params.HasBuilds}}<a href="https://builds.sr.ht/~humaid/{{.Params.GitURL}}?" rel="noreferrer"><img src="https://buildstatusproxy.huma.id/~humaid/{{.Params.GitURL}}.svg" alt="builds.sr.ht status" /></a>{{end}}
   </p>
 </div>
 {{.Content}}
