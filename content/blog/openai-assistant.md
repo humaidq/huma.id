@@ -123,9 +123,7 @@ previous questions and responses, so that it can keep the conversational flow.
 
 ### Demo
 
-Here is video demoing the setup.
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pyhmaCWJn0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Here is a video demoing the setup: <https://youtu.be/pyhmaCWJn0o>
 
 ### Things we can improve
 
