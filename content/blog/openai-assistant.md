@@ -1,5 +1,5 @@
 ---
-title: Building a Personal Assistant using OpenAI and Azure Cognitive Services
+title: Building a Personal Assistant using OpenAI and Azure Services
 date: 2023-02-04
 url: /genie
 aliases:
