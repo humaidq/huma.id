@@ -1,3 +1,2 @@
 /* SITE */
 Generator: Hugo <https://gohugo.io>
-Host: sourcehut pages <https://srht.site>

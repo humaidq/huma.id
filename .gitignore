@@ -2,11 +2,13 @@ public/
 *.log
 *.iso*
 *.bz2
-*.lock
-content/gallery/*/
+.hugo_build.lock
+.direnv/
+.gitignore
 layouts/partials/webring-out.html
 layouts/partials/webring-out.html
 Makefile
 feeds/
 static/sfeed.html
 *\~
+resources/_gen

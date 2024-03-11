@@ -7,8 +7,11 @@
 </ul>{{ end }}
 {{if .IsHome}}
 <h2>Links</h2>
-  <a href="/avatar-fulldef.jpg"><img src="/{{$.Site.Params.Image}}" class="me" width="100px" height="100px"
-     alt="{{$.Site.Params.ImageAlt}}" /></a>
+  {{with resources.Get "/avatar.jpg"}}
+  {{with .Process "webp resize 200x"}}
+    <img src="{{.RelPermalink}}" class="me" width="100px" height="100px"
+      alt="{{$.Site.Params.ImageAlt}}" />
+  {{end}}{{end}}
   <dl>
     <dt>Email</dt>
     <dd><a rel="me" href="mailto:public@huma.id">public@huma.id</a></dd>
@@ -21,4 +24,13 @@
   </dl>
 {{end}}
 </section>
+<style>
+.me {
+  display: block;
+  float: right;
+  width: 148px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+</style>
 {{ partial "footer.html" . }}

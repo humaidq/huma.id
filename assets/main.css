@@ -15,56 +15,43 @@ body {
 
 main {
   background-color: #fefefe;
+  display: flex;
+  flex-direction: row;
 }
 
 a {
-  color: #134dae
+  color: #134dae;
 }
 
 .nav {
   background-color: #134dae;
   margin: 0;
   padding: 0.5em 0;
+  text-align: center;
 }
 
 .nav a {
   margin: 0;
   padding: 0.5em 0;
   text-decoration: none;
+  color: #fefefe;
 }
 
 .nav a:hover {
   text-decoration: underline;
 }
 
-.nav a:focus {
+.nav a:focus, .nav a:active {
   color: #000;
   background-color: #ffbf47;
-}
-
-.nav, .nav a {
-  color: #fefefe;
 }
 
 section {
   width: 100%;
 }
 
-.index {
-  display: flex;
-  flex-direction: row;
-}
-
-.index aside {
+main aside {
   width: 40%;
-}
-
-.me {
-  display: block;
-  float: right;
-  width: 148px;
-  margin: 0 auto;
-  border-radius: 20px;
 }
 
 /* Typography */
@@ -79,10 +66,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin: 0.6em 0;
   padding: 0 2em;
-}
-
-.c {
-  text-align: center;
 }
 
 .entry {
@@ -126,7 +109,7 @@ footer p {
   margin: 0 0 0 0.2em;
 }
 
-a:focus {
+a:focus, a:active {
   outline: 0.2rem solid #ffbf47;
 }
 
@@ -166,10 +149,10 @@ code {
     float: none;
     max-width: 80%;
   }
-  .index {
+  main {
     display: block;
   }
-  .index .container, .index aside {
+  main .container, main aside {
     width: 100%;
   }
 }
