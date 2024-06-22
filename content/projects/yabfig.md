@@ -1,18 +1,9 @@
 ---
 title: yabfig
 GitURL: yabfig
-section: "Command-line Tools"
-MailingList: general
-License: BSD-2-Clause
 Language: Go
 date: 2019-03-08
-GoDoc: true
-LatestVersion: v0.3
-HasBuilds: true
 Description: "A simple BF interpreter, debugger and linter written in Go."
-Image: /projects/screenshots/yabfig.webp
-ImageAlt: "An example of yabfig running a rot13 program"
-Usability: 4
 url: /yabfig
 aliases:
   - /projects/yabfig
@@ -22,24 +13,22 @@ aliases:
 
 {{< image >}}
 
-yabfig is a [BF](https://en.wikipedia.org/wiki/brainfuck) 
+yabfig is a [BF](https://en.wikipedia.org/wiki/brainfuck)
 interpreter written in Go. It has also been extended to lint
 code (by removing un-interpreted characters) and to include a gdb-style
 interpreter.
-
-
 
 ### 2. Requirements
 
 The following packages must be installed on your system.
 
-- Go *(tested with 1.12)*
+- Go _(tested with 1.12)_
 - Git
 
 ### 3. Copying and contributing
 
 This program is written by Humaid AlQassimi,
-and is distributed under the BSD 2 Clause license.  
+and is distributed under the BSD 2 Clause license.
 
 ### 4. Download and install
 
@@ -56,11 +45,15 @@ Options:
 	-lint		Lint (format) a Brainfuck file by removing spaces and non-instruction characters and output it to standard output.
 	-debug		Run an interactive gdb-style debugger.
 ```
+
 To run the example program `hello-world.bf`:
+
 ```sh
 $ yabfig programs/hello-world.bf
 ```
+
 Using the debugger to set breakpoints:
+
 ```sh
 $ yabfig -debug programs/hello-world.bf
 yabfig debugger for Brainfuck.
@@ -92,20 +85,20 @@ Hello WorldBreakpoint hit at position 98
 Breakpoint hit at position 106
 (yabfig-dbg) c
 Program exited
-(yabfig-dbg) 
+(yabfig-dbg)
 ```
 
 ### 6. Change log
 
-- v0.1 *(Mar 8 2019)*
+- v0.1 _(Mar 8 2019)_
   - Initial release
-- v0.2 *(Mar 18 2019)*
+- v0.2 _(Mar 18 2019)_
   - Added linter
   - Added unit tests
   - Interpreter as a struct with methods
-- v0.2.1 *(Mar 18 2019)*
+- v0.2.1 _(Mar 18 2019)_
   - Add GoDoc
   - Move Interpreter to a separate package
-- v0.3 *(Mar 22 2019)*
+- v0.3 _(Mar 22 2019)_
   - Add a simple gdb-style debugger
   - Improve interpreter functions

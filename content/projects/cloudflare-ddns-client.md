@@ -1,16 +1,9 @@
 ---
 title: Cloudflare DDNS Client
-GitURL: cloudflare-ddns-client
-section: "Command-line Tools"
-MailingList: general
-License: BSD-2-Clause
+GitURL: https://github.com/humaidq/cloudflare-ddns-client
+Description: "A simple Cloudflare Dynamic DNS Client."
 Language: Go
 date: 2020-06-10
-GoDoc: false
-IssueTracker: false
-LatestVersion: "v0.2.0"
-Description: "A simple Cloudflare Dynamic DNS Client."
-Usability: 4
 url: /ddns
 aliases:
   - "/projects/cloudflare-ddns-client"
@@ -26,7 +19,7 @@ solution to this very simple problem.
 
 The following packages must be installed on your system.
 
-- Go *(tested with 1.14)*
+- Go _(tested with 1.14)_
 
 ### 3. Installation and Usage
 

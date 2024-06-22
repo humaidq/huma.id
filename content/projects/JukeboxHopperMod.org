@@ -1,16 +1,8 @@
 #+title: Jukebox Hopper Mod
 #+date: 2022-05-15
 #+description: A simple Minecraft mod which allows you to use hoppers to insert records into jukeboxes.
-#+giturl: jukeboxhopper
-#+MailingList: general
-#+section: Games
-#+license: BSD-2-Clause
+#+giturl: https://github.com/humaidq/jukeboxhopper
 #+language: Java
-#+usability: 4
-#+latestversion: v2.0.0
-#+image: /projects/screenshots/JukeboxHopperMod.webp
-#+imagealt: Picture of a hopper on top of a jukebox in Minecraft
-#+site: https://modrinth.com/mod/jukeboxhopper
 #+url: /jb
 #+aliases[]: /projects/jukeboxhoppermod
 

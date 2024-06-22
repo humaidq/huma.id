@@ -26,7 +26,7 @@ future to a client. During the 7 months we have built:
 
 - A smart home system with a [plugin API (over RPC)](https://github.com/hashicorp/go-plugin)
   as a responsive (progressive) web application.
-	- Includes a simulation module for testing.
+  - Includes a simulation module for testing.
 - A Minecraft server ([Spigot]) plugin for testing and demonstrating the
   smart home system on an environment which we can control. Hooked using our
   plugin API.
@@ -40,7 +40,7 @@ future to a client. During the 7 months we have built:
 - A custom Raspbian distribution for use with our Raspberry Pi (enclosed in our
   custom 3D-printed case), this enables iglü as a system service, and adds
   debugging functionality (Ethernet gadget, serial console, pre-setup WPA2
-  Enterprise with wpa\_supplicant, etc).
+  Enterprise with wpa_supplicant, etc).
 - A plugin packager (with GUI) which speeds up cross-compiling, compressing and
   packaging plugins directly for the marketplace.
 - A [marketplace website](https://market.nacdlow.com), generated with a static website generator ([Hugo]).
@@ -77,28 +77,28 @@ We are lucky to have a group with a diverse range of skills.
 The following are all of the services part of the project.
 
 - [nacdlow.com](https://nacdlow.com)
-	- The group portfolio website, used to be the marketing website.
+  - The group portfolio website, used to be the marketing website.
 - [marketing.nacdlow.com](https://marketing.nacdlow.com)
-	- The Wordpress marketing website built by Mark.
+  - The Wordpress marketing website built by Mark.
 - [demo.nacdlow.com](https://demo.nacdlow.com)
-	- Virtual expo demo and (now defunct) Minecraft server instance
-	  information page.
+  - Virtual expo demo and (now defunct) Minecraft server instance
+    information page.
 - [app.nacdlow.com](https://app.nacdlow.com)
-	- Virtual expo iglü application instance, linked from the demo page.
+  - Virtual expo iglü application instance, linked from the demo page.
 - local.nacdlow.com
-	- This is used to be the local testing domain, this is usually set on the
-	  developers' machines to the loopback address. This is used with the Dev
-	  DNS application described in the next section.
+  - This is used to be the local testing domain, this is usually set on the
+    developers' machines to the loopback address. This is used with the Dev
+    DNS application described in the next section.
 - [market.nacdlow.com](https://market.nacdlow.com)
-	- The iglü marketplace which hosts the plugin descriptions and their
-	  binaries.
+  - The iglü marketplace which hosts the plugin descriptions and their
+    binaries.
 - [payment.nacdlow.com](https://payment.nacdlow.com)
-	- The Stripe test payment gateway for the marketplace.
+  - The Stripe test payment gateway for the marketplace.
 - [wiki.nacdlow.com](https://wiki.nacdlow.com)
-	- The team's internal development wiki, contains information about code and
-	  design style guides, group organisation and structure information,
-	  learning material, and more.
-	  
+  - The team's internal development wiki, contains information about code and
+    design style guides, group organisation and structure information,
+    learning material, and more.
+
 A mail server has been setup, and each member of the team has an inbox (such as
 [humaid@nacdlow.com](mailto:humaid@nacdlow.com)). A general broadcast email was
 also created. This is as we try to manage our group as similarly to an actual
@@ -123,7 +123,6 @@ work done on the project. It is a self-contained project which includes:
 - Plugin API
 
 [Visit our demo website](https://demo.nacdlow.com) to try it out!
-
 
 It is the web server and control system for the smart home. Its purpose is to
 control home appliances and Internet-connected devices. It is self-contained,
@@ -362,7 +361,6 @@ The group consists of:
 - [Numan Ali]\: Technical Manager
 - [Ruaridh Mollica]\: Organisational Manager
 
-
 ### 4. Project Source Code
 
 Although the projects are not open-sourced, the projects' source code may still
@@ -378,7 +376,6 @@ rights of the project creators.
 [Mark S Bird]: https://www.linkedin.com/in/mark-bird-/
 [Numan Ali]: https://github.com/n-ali1
 [Ruaridh Mollica]: https://ruaridhmollica.com/
-
 [LaTeX]: https://www.latex-project.org/
 [Adobe XD]: https://www.adobe.com/products/xd.html
 [Spigot]: https://www.spigotmc.org/wiki/about-spigot/
@@ -386,7 +383,6 @@ rights of the project creators.
 [Go]: https://go.dev
 [Tinkercad]: https://www.tinkercad.com/
 [Stripe]: https://stripe.com/
-
 [macaron]: https://go-macaron.com
 [XORM]: https://xorm.io
 [go-plugin]: https://github.com/hashicorp/go-plugin
@@ -395,11 +391,8 @@ rights of the project creators.
 [Chart.js]: https://github.com/hashicorp/go-plugin
 [Skycons]: https://darkskyapp.github.io/skycons/
 [FontAwesome]: https://fontawesome.com/
-
 [Bukkit]: https://bukkit.gamepedia.com/Main_Page
 [Spigot]: https://spigotmc.org
 [Minecraft]: https://minecraft.net
-
 [Heroku]: https://heroku.com
-
 [AGPL license]: https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)

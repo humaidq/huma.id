@@ -1,14 +1,11 @@
 ---
 title: Platform
-section: "Others"
 date: 2020-08-28
 language: Go
-license: AGPL-3.0
 site: https://github.com/hw-cs-reps/platform
 Description: "A platform for posting announcements, tickets, and complaints for students"
 Image: /projects/platform/platform-dark.png
 ImageAlt: "A screenshot of the platform dashboard, showing announcements and tickets on the navigation bar, and the page contains links & resources, and also list of the class representatives."
-Usability: 4
 url: /platform
 aliases:
   - /projects/platform
@@ -60,7 +57,7 @@ The ticketing system is what makes the platform particularly interesting. It
 allows students to post complaints anonymously, and they may sort tickets based
 on their degree or a specific course they may be taking.
 
-Each user on the ticketing system is given a randomly generated name, which is 
+Each user on the ticketing system is given a randomly generated name, which is
 non-unique. This allows continuity with discussions, while preserving the
 identity of the students. The system keeps track of their identity temporarily
 with a session cookie.
@@ -122,7 +119,7 @@ instance-related settings.
 
 The following packages must be installed on your system.
 
-- Go *(tested with 1.14)*
+- Go _(tested with 1.14)_
 - Git
 
 ### 3. Copying and contributing
@@ -147,6 +144,6 @@ Running the web server will automatically generate a configuration file
 ```sh
 $ ./platform run
 ```
+
 The program will exit when run for the first time, prompting you to configure
 the program.
-

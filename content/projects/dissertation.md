@@ -1,13 +1,10 @@
 ---
 title: Custom Secure Linux Distribution Generator
-section: "others"
 language: Go
-GitURL: diss_y4_impl
-License: "AGPL-3.0"
+GitURL: https://github.com/humaidq/secure-distro-gen
 date: 2021-04-01
 description: "My BSc Computer Science dissertation project. A system that
 allows users to create a custom secure Linux distribution using a web app."
-site: https://huma.id/diss.pdf
 url: /diss
 aliases:
   - "/projects/dissertation"

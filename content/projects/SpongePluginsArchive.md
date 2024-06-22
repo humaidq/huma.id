@@ -1,22 +1,19 @@
 ---
 title: Sponge Plugins Archive
-GitURL: SpongePluginsArchive
-section: "Games"
-License: MIT
+GitURL: https://github.com/humaidq/sponge-plugins-archive
 Language: Java
 date: 2016-05-31
-NotAccepting: true
 Description: "Archive repository of my Sponge plugins."
-Usability: 4
 url: /sponge-plugins
 aliases:
   - /projects/spongepluginsarchive
 ---
+
 This is an archive repository to my three old Sponge plugins, which I am sure no longer works in the current version of Sponge server.
 
-This repository includes;  
+This repository includes;
 
-- PlayerLogger: A simple Sponge plugin which logs player events. 
+- PlayerLogger: A simple Sponge plugin which logs player events.
 - ChatLimiter: A simple Sponge plugin which allows you to limit the rate of chat messages and commands.
 - SignColours: A simple plugin that colours signs with permissions.
 

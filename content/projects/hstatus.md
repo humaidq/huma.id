@@ -1,16 +1,10 @@
 ---
 title: hstatus
-GitURL: hstatus
-section: "Others"
+GitURL: https://github.com/humaidq/hstatus
 License: BSD-2-Clause
 Language: Rust
 date: 2020-04-12
-LatestVersion: v0.2
-HasBuilds: true
-MailingList: general
-IssueTracker: false
 Description: "A dwm status monitor updater with multiple timezones and low battery flair."
-Usability: 4
 url: /hstatus
 aliases:
   - /hstat
@@ -43,7 +37,7 @@ The following packages must be installed on your system.
 ### 3. Copying and contributing
 
 This program is written by Humaid AlQassimi, and is distributed under the BSD 2
-Clause license.  
+Clause license.
 
 ### 4. Download and build
 
@@ -55,9 +49,9 @@ $ cargo build
 
 ### 6. Change log
 
-- v0.1 *(Apr 12 2020)*
+- v0.1 _(Apr 12 2020)_
   - Initial release
-- v0.2 *(Sep 9 2020)*
+- v0.2 _(Sep 9 2020)_
   - Added low battery flair
   - Remove COVID stats
   - Separated status items in standalone functions

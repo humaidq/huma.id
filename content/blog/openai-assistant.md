@@ -22,7 +22,6 @@ smart devices.
 We built this project using devices laying around, which was a Raspberry Pi 3B,
 and a small Jabra speaker/microphone.
 
-
 We initially created two parts for this system, a speech to text component, and
 a text to speech component. We made a simple loop using the [Cognitive
 Services Speech SDK](https://pypi.org/project/azure-cognitiveservices-speech/),
@@ -131,7 +130,7 @@ There are currently some delays in the system. Some of the delays are probably
 due to the network overhead between the components and delays from the
 components themselves (such as speech to text, and GPT-3). I'm sure there are
 ways to further optimise this, but we got this working really well without
-optimising 
+optimising
 
 Another factor causing delays is how we currently detect the "Hey" phrase
 using the Cognitive Services. We currently continuously run speech to text, and
@@ -155,19 +154,20 @@ assistant, that even beats existing assistants in the market -- all with
 minimal programming.
 
 We have released the code on sourcehut under BSD 2-Clause license:
-<https://git.sr.ht/~humaid/genie-assistant>
+<https://github.com/humaidq/genie-assistant>
 
 ---
 
 ### Attributions
 
 Microsoft icons used on diagrams in this post are licensed under these terms:
+
 > Microsoft permits the use of these icons in architectural diagrams, training
 > materials, or documentation. You may copy, distribute, and display the icons
 > only for the permitted use unless granted explicit permission by Microsoft.
 > Microsoft reserves all other rights.
 
-The LIFX logo is a trademark of Feit Electric Company.  The Jabra logo is a
+The LIFX logo is a trademark of Feit Electric Company. The Jabra logo is a
 trademark of GN Audio. The "Speak" icon is created by yut1655
 ([flaticon](https://www.flaticon.com/free-icon/speak_1247944), [terms of
 use](https://www.freepikcompany.com/legal#nav-flaticon)). The "Genie" logo that

@@ -1,17 +1,9 @@
 ---
 title: godoc2markdown
-GitURL: godoc2markdown
-section: "Command-line Tools"
-License: BSD-2-Clause
+GitURL: https://github.com/humaidq/godoc2markdown
 Language: Go
 date: 2019-10-11
-GoDoc: true
-LatestVersion: v0.1
-HasBuilds: true
-MailingList: general
-IssueTracker: true
 Description: "A program which converts Go Doc output to Markdown."
-Usability: 3
 url: /godoc2markdown
 aliases:
   - /projects/godoc2markdown
@@ -37,7 +29,7 @@ The following packages must be installed on your system.
 ### 3. Copying and contributing
 
 This program is written by Humaid AlQassimi,
-and is distributed under the BSD 2 Clause license.  
+and is distributed under the BSD 2 Clause license.
 
 ### 4. Download and install
 
@@ -58,6 +50,5 @@ $ go doc -all . | godoc2markdown > DOCUMENTATION.md
 
 ### 6. Change log
 
-- v0.1 *(Oct 11 2019)*
+- v0.1 _(Oct 11 2019)_
   - Initial release
-

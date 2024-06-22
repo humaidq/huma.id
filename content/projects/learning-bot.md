@@ -1,12 +1,9 @@
 ---
 title: Learning Bot
 date: 2019-06-04
-section: "Web Applications"
 site: https://github.com/peergramming/learning-bot
 Description: "A GitLab bot for providing programming advice based on code repair tools."
 Language: Go
-License: AGPL-3.0-only
-Usability: 4
 url: /lb
 aliases:
   - /projects/learning-bot
@@ -16,9 +13,9 @@ aliases:
 ### Overview
 
 The aim of this project is to create a GitLab bot which would download students
-code and generate a report containing advice on repairing issues found in the source code.  
+code and generate a report containing advice on repairing issues found in the source code.
 
-This project is developed as an internship project at Heriot-Watt University.  
+This project is developed as an internship project at Heriot-Watt University.
 
 ### Description
 

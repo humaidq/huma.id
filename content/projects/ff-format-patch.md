@@ -1,15 +1,9 @@
 ---
 title: Fast-Forward with steps formatting
-GitURL: ff-format-patch
-section: "Command-line Tools"
-MailingList: general
-License: "GPL-2.0-or-later"
+GitURL: https://github.com/humaidq/ff-format-patch
 Language: C
 date: 2019-10-24
-LatestVersion: "v1"
-IssueTracker: true
 Description: "A patch for FF v2.3 to allow steps to be formatted for humans."
-Usability: 4
 url: /ff
 aliases:
   - "/projects/ff-format-patch"
@@ -41,9 +35,9 @@ later, and so is the patch.
 
 ### 4. Downloading and patching
 
-- [`steps-format-v1.patch`](/projects/ff-format-patch/steps-format-v1.patch) *(12K)*
+- [`steps-format-v1.patch`](/projects/ff-format-patch/steps-format-v1.patch) _(12K)_
 - [`FF-v2.3.tgz`](https://fai.cs.uni-saarland.de/hoffmann/ff/FF-v2.3.tgz)
-	*(72K)*
+  _(72K)_
 
 Extract FF, and copy the patch file in the extracted directory. Then run the
 following command to apply the patch and compile:
@@ -52,6 +46,7 @@ following command to apply the patch and compile:
 $ patch < steps-format-v1.patch
 $ make
 ```
+
 Then you will have a binary with the patch.
 
 ### 5. Example Usage
@@ -64,6 +59,7 @@ $ ./ff -o domain.pddl -f prob.pddl -h problem-format.txt
 ```
 
 And let's say we have a particular `personWalk` action:
+
 ```lisp
 (:action personWalk
 	:parameters
@@ -71,12 +67,16 @@ And let's say we have a particular `personWalk` action:
 	 ?to     - room
 	 ?person - person)
 ```
+
 To format the output of this action, we can add the following to our format
 file:
+
 ```text
 PERSONWALK $2 walks from the $0 to the $1
 ```
+
 Now that we run the command, we should get:
+
 ```text
 [...]
 ff: found legal plan as follows
@@ -89,11 +89,11 @@ step    0: PERSONWALK HUMAID walks from the KITCHEN to the LIVING-ROOM
 
 Binary compiled and linked on `Linux kudu 4.19.0-6-amd64 #1 SMP Debian
 4.19.67-2+deb10u1 (2019-09-20) x86_64 GNU/Linux`. Should work on most modern
-Linux x86_64 glibc systems.  
+Linux x86_64 glibc systems.
 
-- [`ff`](/projects/ff-format-patch/ff) *(936K)*
+- [`ff`](/projects/ff-format-patch/ff) _(936K)_
 
 ### 7. Change log
 
-- v1 *(Oct 24 2019)*
+- v1 _(Oct 24 2019)_
   - Initial release
