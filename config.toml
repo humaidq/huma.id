@@ -6,7 +6,7 @@ preserveTaxonomyNames = true
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 disableHugoGeneratorInject = true
-enableGitInfo = true
+enableGitInfo = false
 [Params]
 	name = "Humaid Alqasimi"
 	image = "avatar.webp"
