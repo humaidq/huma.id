@@ -1,9 +1,8 @@
-# huma.id
-
 <div align="center">
-    <h3 align="center">huma.id website</h3>
-    <p align="center">Source of my personal website</p>
+    <h1>huma.id</h1>
+    <p>Source of my personal website</p>
 </div>
+[![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
 ## Description
 
@@ -16,22 +15,21 @@ The website is generated using [Hugo].
 
 - [Nix](https://zero-to-nix.com/start/install) (with flakes enabled)
 - Optional: [nix-direnv]
-  - If not using nix-direnv, you need to run `nix develop` to load
-    dependencies in your shell.
+  - If not used, you need to run `nix develop` to load dependencies in your
+    shell.
 
 ## Building
 
-To build without cloning:
+To build the site:
 
 ```
-nix build github:humaidq/huma.id
+nix build
 ```
-
-The output would be in `./result`.
 
 ## Usage
 
-This package is imported by [dotfiles] repository.
+This Nix flake is imported by my [dotfiles] repository, which hosts this
+website.
 
 [dotfiles]: https://github.com/humaidq/dotfiles
 [Hugo]: https://gohugo.io
