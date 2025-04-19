@@ -1,0 +1,12 @@
+---
+interface Props {
+  url: string;
+}
+
+const { url } = Astro.props;
+---
+
+<p>
+  Project URL:
+  <a href={url}>{url.replace("https://", "")}</a>
+</p>

@@ -1,0 +1,20 @@
+---
+interface Props {
+  programmingLanguage?: string;
+  license?: string;
+}
+
+const { programmingLanguage, license } = Astro.props;
+---
+
+{
+  programmingLanguage && (
+    <p>
+      {`Written in ${programmingLanguage}${license ? `, licensed under the ` : "."}`}
+      {license && (
+        <a href={`https://spdx.org/licenses/${license}.html`}>{license}</a>
+      )}
+      {license && " license."}
+    </p>
+  )
+}

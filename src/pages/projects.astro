@@ -1,0 +1,44 @@
+---
+import { getCollection } from "astro:content";
+import YearDate from "../components/YearDate.astro";
+import DefaultPage from "../layouts/DefaultPage.astro";
+
+const projects = (await getCollection("projects")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<DefaultPage title="Projects">
+  <h2>Projects</h2>
+  <p>
+    Here is a list of (mostly) open-source projects that I have worked on. Each
+    project has descriptions and usage information.
+  </p>
+  {
+    projects.map((project) => (
+      <>
+        <div class="entry project">
+          <a href={`/${project.slug}`} data-astro-prefetch>
+            {project.data.title}
+          </a>
+          {project.data.latestVersion && (
+            <>
+              &middot; <small>{project.data.latestVersion}</small>
+            </>
+          )}
+          &middot;{" "}
+          {project.data.programmingLanguage && (
+            <>
+              {project.data.programmingLanguage}
+              &middot;{" "}
+            </>
+          )}
+          <YearDate date={project.data.pubDate} />
+          <div class="meta">
+            {project.data.description && <p>{project.data.description}</p>}
+          </div>
+        </div>
+      </>
+    ))
+  }
+</DefaultPage>

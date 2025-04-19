@@ -1,0 +1,70 @@
+---
+import DefaultPage from "../layouts/DefaultPage.astro";
+import { Link } from "astro-link";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Humaid Alqasimi",
+  givenName: "Humaid",
+  knowsLanguage: "en,ar",
+  nationality: {
+    "@type": "Country",
+    name: "United Arab Emirates",
+    url: "https://u.ae/en/about-the-uae/fact-sheet",
+  },
+  url: "https://huma.id",
+};
+---
+
+<DefaultPage
+  title="Humaid Alqasimi"
+  description="An Emirati who likes writing open-source software."
+  schema={schema}
+>
+  <p>
+    Welcome to my personal website. You can find my open-source projects, blog,
+    and other works on this website.
+  </p>
+  <p>
+    I like writing software that solves problems. My <a
+      data-astro-prefetch
+      href="/projects">projects</a
+    >
+    are written in various programming languages, and I am always improving my skills
+    by learning new methodologies, and also improve my understanding of computer
+    security.
+  </p>
+
+  <h2>Links</h2>
+  <dl>
+    <dt>Email</dt>
+    <dd>
+      <Link href={"mailto:public@huma.id"}>public@huma.id</Link>
+    </dd>
+    <dt>QRZ</dt>
+    <dd>
+      <a
+        rel="noreferrer noopener me"
+        target="_blank"
+        href="https://www.qrz.com/db/A66H">A66H</a
+      >
+    </dd>
+    <dt>Mastodon</dt>
+    <dd>
+      <a
+        rel="noreferrer noopener me"
+        target="_blank"
+        href="https://masto.ai/@humaid">@humaid@masto.ai</a
+      >
+    </dd>
+    <dt>LinkedIn</dt>
+    <dd>
+      <a
+        rel="noreferrer noopener me"
+        target="_blank"
+        href="https://www.linkedin.com/in/humaidq/">linkedin.com/in/humaidq</a
+      >
+    </dd>
+  </dl>
+</DefaultPage>

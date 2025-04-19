@@ -1,0 +1,226 @@
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  font-family:
+    inter,
+    -apple-system,
+    blinkmacsystemfont,
+    source sans pro,
+    roboto,
+    sans-serif;
+}
+
+body {
+  font-size: 1.15em;
+  line-height: 1.4em;
+  background-color: #edeee6;
+  max-width: 55em;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #fefefe;
+}
+
+a {
+  color: #134dae;
+}
+
+.nav {
+  background-color: #134dae;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+.nav a {
+  margin: 0;
+  padding: 0.5em 0;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav a:focus {
+  color: #000;
+  background-color: #ffbf47;
+}
+
+.nav,
+.nav a {
+  color: #fefefe;
+}
+
+section {
+  width: 100%;
+}
+
+.index {
+  display: flex;
+  flex-direction: row;
+}
+
+.index aside {
+  width: 40%;
+}
+
+.me {
+  display: block;
+  float: right;
+  width: 148px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  margin: 0.5em 0;
+  line-height: 1;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.6em 0;
+  padding: 0 2em;
+}
+
+.c {
+  text-align: center;
+}
+
+.entry {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.entry a {
+  display: block;
+}
+
+.project a {
+  display: inline;
+}
+
+.meta a {
+  padding: 0;
+}
+
+.meta p {
+  margin: 0.3em 0 0 1.4em;
+}
+
+main {
+  padding: 1.1em 2em;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #000;
+  color: #cccccc;
+}
+
+footer a {
+  color: #eeeeee;
+}
+
+footer p {
+  margin: 0 0 0 0.2em;
+}
+
+a:focus {
+  outline: 0.2rem solid #ffbf47;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Code blocks */
+pre {
+  font-family:
+    "SFMono-Regular", "Source Code Pro", "Consolas", "Liberation Mono",
+    monospace;
+  padding: 0.25rem 1rem;
+  margin: 0 -1rem;
+  overflow-x: auto;
+  border-radius: 3px;
+}
+
+code:not(pre code) {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.2em;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 48rem) {
+  body {
+    font-size: 1.1em;
+  }
+
+  .me {
+    width: 100px;
+  }
+
+  .toc {
+    float: none;
+    max-width: 80%;
+  }
+
+  .index {
+    display: block;
+  }
+
+  .index .container,
+  .index aside {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 60rem) {
+  article {
+    padding: 0 10%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #252525;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #eee;
+  }
+
+  main {
+    background-color: #303030 !important;
+  }
+
+  a {
+    color: #acbbf9;
+  }
+
+  body {
+    color: #eee;
+  }
+}

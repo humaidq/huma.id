@@ -1,36 +1,87 @@
 {
-  description = "A basic flake with a shell";
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-  inputs.flake-utils.url = "github:numtide/flake-utils";
+  description = "Humaid's personal website";
 
-  outputs = {
-    nixpkgs,
-    flake-utils,
-    ...
-  }:
-    flake-utils.lib.eachDefaultSystem (system: let
-      pkgs = nixpkgs.legacyPackages.${system};
-    in rec {
-      devShells.default = pkgs.mkShell {
-        packages = [pkgs.hugo];
+  inputs = {
+    # Our source of packages
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+
+    # Allows us to structure the flake with the NixOS module system
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
+
+    # Get to the bottom of it
+    flake-root.url = "github:srid/flake-root";
+
+    # Format all the things
+    treefmt-nix = {
+      url = "github:numtide/treefmt-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # For preserving compatibility with non-Flake users
+    flake-compat = {
+      url = "github:nix-community/flake-compat";
+      flake = false;
+    };
+
+    # To ensure that checks are run locally to enforce cleanliness
+    git-hooks-nix = {
+      url = "github:cachix/git-hooks.nix";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        nixpkgs-stable.follows = "nixpkgs";
+        flake-compat.follows = "flake-compat";
       };
+    };
 
-      packages.site = pkgs.stdenv.mkDerivation {
-        name = "humaid-site";
-        src = ./.;
-        buildInputs = [
-          pkgs.hugo
-        ];
-
-        buildPhase = ''
-          ${pkgs.hugo}/bin/hugo
-        '';
-
-        installPhase = ''
-          cp -r public $out
-        '';
+    # Make it quick
+    nix-fast-build = {
+      url = "github:Mic92/nix-fast-build";
+      inputs = {
+        flake-parts.follows = "flake-parts";
+        nixpkgs.follows = "nixpkgs";
+        treefmt-nix.follows = "treefmt-nix";
       };
+    };
 
-      defaultPackage = packages.site;
-    });
+    # Increased productivity for ephemeral environments
+    devshell = {
+      url = "github:numtide/devshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+  };
+
+  outputs =
+    inputs@{ flake-parts, ... }:
+    flake-parts.lib.mkFlake { inherit inputs; } {
+      # Toggle this to allow debugging in the repl
+      # see: https://flake.parts/debug
+      debug = false;
+
+      systems = [
+        "x86_64-linux"
+        "aarch64-linux"
+      ];
+
+      perSystem =
+        {
+          pkgs,
+          ...
+        }:
+        let
+          inherit (pkgs) callPackage;
+        in
+        {
+          packages = {
+            humaid-site = callPackage ./package.nix { };
+          };
+        };
+
+      imports = [
+        ./nix/flake-module.nix
+      ];
+    };
 }

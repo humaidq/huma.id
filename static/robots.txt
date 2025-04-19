@@ -1,3 +1,0 @@
-# robots.txt for https://huma.id
-Sitemap: https://huma.id/sitemap.xml
-

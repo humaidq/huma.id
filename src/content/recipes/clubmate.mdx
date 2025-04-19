@@ -1,0 +1,43 @@
+---
+title: Sugar-free Club-Mate
+date: 2022-12-03
+slug: mate
+---
+
+This recipe is a clone of the German Club-Mate soda.
+Compared to the original, this soda tastes sweeter and has a stronger yerba mate flavour.
+
+import Recipe from "../../components/Recipe.jsx";
+import RecipeUnit from "../../components/RecipeUnit.jsx";
+import RecipeTemp from "../../components/RecipeTemp.jsx";
+
+### Dietary Information
+
+- **Allergens:** None.
+
+<Recipe defaultServing={4} client:load />
+
+### Ingredients
+
+- <RecipeUnit met={[30, "g"]} us={[1, "oz"]} client:idle /> Yerba Mate
+- <RecipeUnit met={[1, "L"]} us={[1, "qt"]} client:idle /> Hot water
+- <RecipeUnit met={[2, "g"]} us={[0.5, "tsp"]} client:idle /> Citric Acid
+- Sugar-free sweetner, whatever equivalent to <RecipeUnit met={[3.5, "tbsp"]} us={[3.5, "tbsp"]} client:idle /> of sugar.
+  - I used <RecipeUnit met={[1, "tbsp"]} us={[1, "tbsp"]} client:idle /> Steviana brand sweetner, which had acesulfame and sorbitol in addition to stevia, which negated the bitterness and aftertaste of pure stevia.
+
+### Preparation
+
+- Prepare <RecipeUnit met={[1,"L"]} us={[1, "qt"]} client:idle /> hot water at <RecipeTemp temp={80} client:idle/> (not higher, as not to burn the yerba).
+- Let the yerba mate leaves steep in the <RecipeTemp temp={80} client:idle/> hot water for 10 minutes.
+- Strain away the mate leaves, and mix in the citric acid and sweetner.
+- Let it cool.
+
+This is the mate base, dilute 1:1 with sparkling water. Or use regular water and carbonate using a soda machine.
+
+### References
+
+The recipe is inspired by the following sources:
+
+- [Club Mate Copycat (instructables)](https://www.instructables.com/Club-Mate-Copycat/)
+- [osMate: An Open Source Mate Soda (hackaday)](https://hackaday.io/project/171520-osmate-an-open-source-mate-soda)
+- [How to Make Club-Mate by Flavor Lab (YouTube)](https://www.youtube.com/watch?v=ozVhUmkQIW4)

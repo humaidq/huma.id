@@ -1,0 +1,112 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import CloneGit from "./ProjectComponents/CloneGit.astro";
+import LanguageAndLicense from "./ProjectComponents/LanguageAndLicense.astro";
+import ProjectLink from "./ProjectComponents/ProjectLink.astro";
+import Badges from "./ProjectComponents/Badges.astro";
+import TableOfContents from "../components/TableOfContents.astro";
+
+type Props = CollectionEntry<"projects">["data"];
+
+const {
+  title,
+  description,
+  pubDate,
+  programmingLanguage,
+  license,
+  creator,
+  copyrightHolder,
+  gitURL,
+  notAccepting,
+  projectURL,
+  proprietary,
+  latestVersion,
+  goDoc,
+  headings,
+  redirectToGit,
+} = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  name: title,
+  description,
+  dateCreated: pubDate,
+  programmingLanguage,
+  inLanguage: "en-GB",
+  creator: creator || "Humaid Alqasimi",
+  copyrightHolder: copyrightHolder || "Humaid Alqasimi",
+  license: "https://spdx.org/licenses/" + license + ".html",
+  codeRepository: "https://github.com/humaidq/" + gitURL,
+  url: Astro.url,
+  isAccessibleForFree: !proprietary,
+};
+
+if (latestVersion) {
+  schema["version"] = latestVersion;
+}
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} schema={schema} />
+  </head>
+
+  <body>
+    <Header />
+    <main class="index">
+      {
+        !redirectToGit && (
+          <aside>
+            <header>
+              <h2>Table of Contents</h2>
+            </header>
+            <TableOfContents headings={headings} />
+          </aside>
+        )
+      }
+      <section>
+        <p><a href="/projects/">&lt;- All Projects</a></p>
+        <h2>{title}</h2>
+        <div class="meta">
+          {gitURL && <CloneGit url={gitURL} />}
+          <LanguageAndLicense
+            programmingLanguage={programmingLanguage}
+            license={license}
+          />
+          {
+            notAccepting && (
+              <p>
+                <b>Notice:</b> This project is currently not accepting
+                contributions.
+              </p>
+            )
+          }
+          {projectURL && <ProjectLink url={projectURL} />}
+          {
+            proprietary && (
+              <p>
+                <b>Notice:</b> The source of this project is not publicly
+                available.
+              </p>
+            )
+          }
+          <Badges gitURL={gitURL} goDoc={goDoc} />
+        </div>
+        {
+          redirectToGit && (
+            <p>
+              <p>{description}</p>
+              <b>View more details in the repository or project page above.</b>
+            </p>
+          )
+        }
+        <slot />
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

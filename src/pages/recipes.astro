@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import DefaultPage from "../layouts/DefaultPage.astro";
+const posts = (await getCollection("recipes")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<DefaultPage title="Recipes" description="Humaid's recipe book">
+  <h2>Recipes</h2>
+  <p>
+    Welcome to my recipe book. Here are some of the recipes I learned from
+    someone, or found on the Internet and adapted.
+  </p>
+
+  <p>
+    <b>Note:</b> Most of the recipes are work-in-progress right now, so the measurements
+    are not exact or refined.
+  </p>
+  <ul>
+    {
+      posts.map((post) => (
+        <li>
+          <a href={`/${post.slug}`} data-astro-prefetch>
+            {post.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</DefaultPage>

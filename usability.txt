@@ -1,6 +1,0 @@
-Each project usability can be divided into these sections:
-- 0: Completely unusable
-- 1: Barely usable. May have severe bugs, or might not work out of the box.
-- 2: Somewhat usable. May work out of the box, but has some issues.
-- 3: Very usable. Works well, but you may stumble upon some issues.
-- 4: "Production-ready".

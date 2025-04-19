@@ -1,0 +1,36 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+
+type Props = CollectionEntry<"blog">["data"];
+const { blog } = Astro.params;
+const { title, description, pubDate } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <p><a href="/blog/">&lt;- All Posts</a></p>
+      <h2>{title}</h2>
+      <p>
+        <FormattedDate date={pubDate} />
+      </p>
+      <article>
+        <slot />
+        <hr />
+      </article>
+      <h1>
+        Copy &amp; share: <a href={`https://huma.id/${blog}`}>huma.id/{blog}</a>
+      </h1>
+    </main>
+    <Footer />
+  </body>
+</html>

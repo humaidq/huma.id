@@ -1,0 +1,12 @@
+button {
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  background-color: #134dae;
+  padding: 3px 5px;
+  border: rgb(2, 31, 81) 1px solid;
+  text-decoration: none;
+}
+.recipeConfigurator {
+  padding: 5px 15px;
+}
