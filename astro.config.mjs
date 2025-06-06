@@ -12,6 +12,7 @@ export default defineConfig({
   },
   devOverlay: true,
   redirects: {
+    "/contact": "/",
     "/blog/own-distro-p1": "/own-distro/",
     "/own-distro-p1": "/own-distro/",
     "/blog/qnap": "/qnap/",
@@ -46,6 +47,18 @@ export default defineConfig({
     "/igloo": "/iglü/",
     "/iglo": "/iglü/",
     "/projects/iglu": "/iglü/",
+    "/projects/yabfig": "/yabfig/",
+    "/projects/g1mdecompiler": "/g1m/",
+    "/whatsmorse": "/morse/",
+    "/projects/whatsmorse": "/morse/",
+    "/projects/learning-bot": "/lb/",
+    "/learning-bot": "/lb/",
+    "/projects/godoc2markdown": "/godoc2markdown/",
+    "/projects/jukeboxhoppermod": "/jb/",
+    "/recipes/tomato-soup": "/tomato-soup/",
+    "/recipes/cascara": "/cascara/",
+    "/tea": "/cascara/",
+    "/recipes/moroccan": "/spaghetti/",
   },
   markdown: {
     shikiConfig: {

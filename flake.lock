@@ -2,9 +2,7 @@
   "nodes": {
     "devshell": {
       "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "nixpkgs": ["nixpkgs"]
       },
       "locked": {
         "lastModified": 1741473158,
@@ -38,9 +36,7 @@
     },
     "flake-parts": {
       "inputs": {
-        "nixpkgs-lib": [
-          "nixpkgs"
-        ]
+        "nixpkgs-lib": ["nixpkgs"]
       },
       "locked": {
         "lastModified": 1748821116,
@@ -73,13 +69,9 @@
     },
     "git-hooks-nix": {
       "inputs": {
-        "flake-compat": [
-          "flake-compat"
-        ],
+        "flake-compat": ["flake-compat"],
         "gitignore": "gitignore",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "nixpkgs": ["nixpkgs"]
       },
       "locked": {
         "lastModified": 1747372754,
@@ -97,10 +89,7 @@
     },
     "gitignore": {
       "inputs": {
-        "nixpkgs": [
-          "git-hooks-nix",
-          "nixpkgs"
-        ]
+        "nixpkgs": ["git-hooks-nix", "nixpkgs"]
       },
       "locked": {
         "lastModified": 1709087332,
@@ -118,15 +107,9 @@
     },
     "nix-fast-build": {
       "inputs": {
-        "flake-parts": [
-          "flake-parts"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "treefmt-nix": [
-          "treefmt-nix"
-        ]
+        "flake-parts": ["flake-parts"],
+        "nixpkgs": ["nixpkgs"],
+        "treefmt-nix": ["treefmt-nix"]
       },
       "locked": {
         "lastModified": 1749197268,
@@ -172,9 +155,7 @@
     },
     "treefmt-nix": {
       "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "nixpkgs": ["nixpkgs"]
       },
       "locked": {
         "lastModified": 1749194973,

@@ -2,8 +2,6 @@
 title: "Home"
 description: "An Emirati who likes writing open-source software."
 menu: projects
-aliases:
-  - "/contact"
 ---
 
 Welcome to my personal website. You can find my open-source projects, blog, and

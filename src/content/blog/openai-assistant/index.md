@@ -147,8 +147,8 @@ artificial intelligence, or a massive budget to build a very impressive voice
 assistant, that even beats existing assistants in the market -- all with
 minimal programming.
 
-We have released the code on sourcehut under BSD 2-Clause license:
-<https://git.sr.ht/~humaid/genie-assistant>
+We have released the code on GitHub under BSD 2-Clause license:
+<https://github.com/humaidq/genie-assistant>
 
 ---
 

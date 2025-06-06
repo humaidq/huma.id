@@ -13,5 +13,4 @@ imagealt: "Picture of a hopper on top of a jukebox in Minecraft"
 projectURL: "https://modrinth.com/mod/jukeboxhopper"
 slug: jb
 redirectToGit: true
-aliases: ["/projects/jukeboxhoppermod"]
 ---

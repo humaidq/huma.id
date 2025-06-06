@@ -8,9 +8,6 @@ programmingLanguage: Go
 license: AGPL-3.0-only
 usability: 4
 slug: lb
-aliases:
-  - /projects/learning-bot
-  - /learning-bot
 ---
 
 ### Overview

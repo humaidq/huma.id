@@ -11,7 +11,4 @@ description: "A morse code web messaging application written in a two-hour hacka
 usability: 4
 slug: morse
 redirectToGit: true
-aliases:
-  - /whatsmorse
-  - /projects/whatsmorse
 ---

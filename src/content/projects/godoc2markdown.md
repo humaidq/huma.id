@@ -11,6 +11,4 @@ description: "A program which converts Go Doc output to Markdown."
 usability: 3
 slug: godoc2markdown
 redirectToGit: true
-aliases:
-  - /projects/godoc2markdown
 ---
