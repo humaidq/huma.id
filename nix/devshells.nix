@@ -16,7 +16,7 @@
           packages =
             builtins.attrValues {
               inherit (pkgs)
-                npm
+                nodejs
                 ;
             }
             ++ [

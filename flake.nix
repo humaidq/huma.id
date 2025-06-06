@@ -31,7 +31,6 @@
       url = "github:cachix/git-hooks.nix";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        nixpkgs-stable.follows = "nixpkgs";
         flake-compat.follows = "flake-compat";
       };
     };
@@ -75,8 +74,9 @@
           inherit (pkgs) callPackage;
         in
         {
-          packages = {
+          packages = rec {
             humaid-site = callPackage ./package.nix { };
+            default = humaid-site;
           };
         };
 
