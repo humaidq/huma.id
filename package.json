@@ -20,7 +20,7 @@
     "@fontsource/inter": "^5.2.5",
     "@fontsource/twinkle-star": "^5.2.5",
     "@nanostores/solid": "^1.0.0",
-    "astro": "^5.9.0",
+    "astro": "^5.13.2",
     "astro-link": "^1.2.1",
     "format-quantity": "^3.0.0",
     "mdast-util-to-string": "^4.0.0",
