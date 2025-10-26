@@ -1,8 +1,8 @@
 <div align="center">
     <h1>huma.id</h1>
     <p>Source of my personal website</p>
+    <a href="https://builtwithnix.org"><img src="https://builtwithnix.org/badge.svg" /></a>
 </div>
-[![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
 ## Description
 
