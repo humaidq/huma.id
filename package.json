@@ -10,30 +10,30 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.3.6",
-    "@astrojs/preact": "^4.1.1",
-    "@astrojs/rss": "^4.0.12",
+    "@astrojs/check": "^0.9.5",
+    "@astrojs/mdx": "^4.3.9",
+    "@astrojs/preact": "^4.1.2",
+    "@astrojs/rss": "^4.0.13",
     "@astrojs/sitemap": "^3.6.0",
-    "@astrojs/solid-js": "^5.1.1",
-    "@fontsource-variable/inter": "^5.2.5",
-    "@fontsource/inter": "^5.2.5",
-    "@fontsource/twinkle-star": "^5.2.5",
-    "@nanostores/solid": "^1.0.0",
-    "astro": "^5.13.11",
+    "@astrojs/solid-js": "^5.1.2",
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/twinkle-star": "^5.2.8",
+    "@nanostores/solid": "^1.1.1",
+    "astro": "^5.15.2",
     "astro-link": "^1.2.1",
     "format-quantity": "^3.0.0",
     "mdast-util-to-string": "^4.0.0",
     "nanostores": "^1.0.1",
     "normalize.css": "^8.0.1",
-    "preact": "^10.26.8",
+    "preact": "^10.27.2",
     "reading-time": "^1.5.0",
-    "sharp": "^0.34.2",
-    "solid-js": "^1.9.7",
-    "typescript": "^5.8.3"
+    "sharp": "^0.34.4",
+    "solid-js": "^1.9.10",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "prettier": "3.5.3",
+    "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1"
   }
 }
