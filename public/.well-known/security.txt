@@ -1,0 +1,4 @@
+Contact: https://g.huma.id/contact
+Contact: https://www.linkedin.com/in/humaidq/
+Expires: 2029-12-31T20:00:00.000Z
+Canonical: https://huma.id/.well-known/security.txt

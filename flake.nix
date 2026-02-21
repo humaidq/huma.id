@@ -3,7 +3,7 @@
 
   inputs = {
     # Our source of packages
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
 
     # Allows us to structure the flake with the NixOS module system
     flake-parts = {
